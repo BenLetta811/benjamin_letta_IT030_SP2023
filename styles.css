@@ -1,6 +1,6 @@
-div {
+body {
 	height: 100px;
-	font-family: arial, Verdana, sans-serif;
+	font-family: arial, Verdana;
 	color: black;
 	font-size: 12px;
 	padding: 5px;
