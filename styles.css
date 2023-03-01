@@ -1,11 +1,49 @@
-div {
-	height: 100px;
-	font-family: arial, Verdana;
-	color: black;
-	font-size: 12px;
+/*set padding and margin for elements*/
+.parent * {
 	padding: 5px;
 	margin: 6px;
-	background-color: #eee;}
-li {
-	display: inline;
-	margin-right: 10px:}
+}
+
+/*list the bullets to sqaures*/
+.right-box ul {
+	list-style-type: square;
+}
+
+body {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+	color: black;
+}
+
+/*set background color*/
+.gray-box{
+	background-color: #eee;
+}
+
+/*set image with caption, alt and title*/
+img{
+	caption-side: bottom;
+}
+
+/*Create button to open to Hofstra.edu*/
+.link-button{
+	background-color: white
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+.link-button:hover{
+	color: black;
+	border: 1px solid black;
+}
+
+/*add a hiding box "Coming Soon"*/
+.coming-soon{
+	display: none;
+}
+
+/* make a heightand scorll for footer*/
+.footer{
+	height: 200px:
+	overflow: scroll;
+}
