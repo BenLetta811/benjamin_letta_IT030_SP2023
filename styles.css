@@ -1,5 +1,10 @@
-body {
-	font-family: arial;
-	background-color: rgb(185,179,175);}
+div {
+	height: 100px;
+	font-family: arial, Verdana, sans-serif;
+	color: black;
+	font-size: 12px;
+	padding: 5px;
+	margin: 6px;
+	background-color: #eee;}
 h1 {
 	color: rgb(255,255,255);}
