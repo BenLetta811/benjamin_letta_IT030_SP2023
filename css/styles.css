@@ -1,7 +1,8 @@
 /*set padding and margin for elements*/
-.parent * {
+/*.parent * {
 	padding: 5px;
 	margin: 6px;
+	width: 960px;*/
 }
 
 li{
@@ -17,12 +18,16 @@ li{
 
 .left-column {
 	width: 620px;
+	float: left;
 }
 
 body {
 	font-family: Arial, Verdana, sans-serif;
 	font-size: 12px;
 	color: black;
+	padding: 5px;
+	margin: 6px;
+	width: 960px;
 }
 
 /*set background color*/
@@ -49,13 +54,14 @@ div , p{
 
 /*Create button to open to Hofstra.edu*/
 .click-me{
-	background-color: white
+	font: 12px;
+	background-color: white;
 	border: none;
 	text-decoration: none;
 	cursor: pointer;
 }
 .click-me:hover{
-	background-color: white
+	background-color: white;
 	color: black;
 	border: 1px solid black;
 }
