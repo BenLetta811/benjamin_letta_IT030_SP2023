@@ -13,13 +13,11 @@ li{
 /*list the bullets to sqaures*/
 .right-column ul {
 	list-style-type: square;
-	height: 100px;
 }
 
 .right-column li {
 	display: block;
 	list-style-type: square;
-	height: 100px;
 }
 .left-column {
 	width: 620px;
@@ -37,6 +35,11 @@ body {
 /*set background color*/
 div , p{
 	background-color: #eee;
+	
+}
+
+div {
+	border: 1px solid black;
 }
 
 /*set image with caption, alt and title*/
