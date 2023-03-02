@@ -1,67 +1,30 @@
-/* Set padding and margin for all elements inside the parent element */
-.parent * {
+ {
   padding: 5px;
   margin: 6px;
-}
-
-/* Set list style for right side box */
-.right-box ul {
-  list-style-type: square;
-}
-
-/* Set default font family, size, and color for all elements */
-* {
   font-family: Arial, Verdana, sans-serif;
   font-size: 12px;
   color: black;
 }
 
-/* Set background color for gray boxes */
-.gray {
+ul {
+  list-style-type: square;
+}
+
+.gray-box {
   background-color: #eee;
 }
 
-/* Set styles for image with caption */
-.img-with-caption {
-  display: block;
-  margin: 6px auto;
-  text-align: center;
-}
-
-.img-with-caption img {
-  display: block;
-  margin: 0 auto;
-}
-
-.img-with-caption figcaption {
-  font-size: 10px;
-  text-align: center;
-}
-
-/* Set styles for "Click me" button */
-.click-me {
-  background-color: white;
-  border: 1px solid transparent;
+.click-me-button:hover {
   color: black;
-  text-decoration: none;
-  display: inline-block;
-  padding: 5px;
-  margin: 6px;
-}
-
-.click-me:hover {
-  background-color: white;
   border: 1px solid black;
-  color: black;
+  background-color: white;
 }
 
-/* Set styles for coming soon div */
 .coming-soon {
   display: none;
 }
 
-/* Set height and overflow for footer box */
 .footer-box {
   height: 200px;
-  overflow: auto;
+  overflow-y: scroll;
 }
