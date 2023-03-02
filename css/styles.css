@@ -66,16 +66,40 @@ div , p{
 /*Create button to open to Hofstra.edu*/
 .click-me{
 	font: 16px;
-	background-color: white;
+	background-color: gray;
 	border: none;
 	text-decoration: none;
 	cursor: pointer;
 }
 .click-me:hover{
-	background-color: gray;
+	background-color: white;
 	color: black;
 	border: 1px solid black;
 }
+.button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button a:hover {
+  color: inherit;
+}
+
 
 /*add a hiding box "Coming Soon"*/
 .coming-soon{
@@ -88,7 +112,7 @@ div , p{
 	width: 960px;
 	overflow: scroll;
 }
-p.two{
+ p.two{
 	overflow: scroll;
 }
 /* other code */
