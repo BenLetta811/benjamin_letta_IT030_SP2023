@@ -32,6 +32,7 @@ body {
 /*set background color*/
 div , p{
 	background-color: #eee;
+	border: 1px solid black;
 }
 
 /*set image with caption, alt and title*/
