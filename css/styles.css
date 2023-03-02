@@ -2,7 +2,7 @@
 .parent * {
 	padding: 5px;
 	margin: 6px;
-	width: 960px;
+	/*width=960px*/
 }
 
 li{
