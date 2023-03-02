@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Arial, Verdana, sans-serif;
+        font-size: 12px;
+        color: black;
+        margin: 6px;
+        padding: 5px;
+      }
+
+      .gray-box {
+        background: #eee;
+      }
+
+      .square-list {
+        list-style-type: square;
+      }
+
+      #click-me-btn {
+        background-color: white;
+        border: none;
+      }
+
+      #click-me-btn:hover {
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+      }
+
+      #coming-soon {
+        display: none;
+      }
+
+      #footer {
+        height: 200px;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gray-box">
+      <h1>Exercise</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan mi at lectus lacinia, eget volutpat enim vestibulum. Duis quis risus purus. Praesent efficitur ut risus at maximus. Integer ut ultrices tellus, non euismod tellus.</p>
+      <img src="image.jpg" alt="Example image" title="Example image caption">
+      <button id="click-me-btn"><a href="https://www.hofstra.edu" target="_blank">Click me</a></button>
+    </div>
+    <div class="gray-box">
+      <h2>Right side box</h2>
+      <ul class="square-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+    <div id="coming-soon">
+      <h3>Coming soon!</h3>
+      <p>More information will be available shortly.</p>
+    </div>
+    <div id="footer" class="gray-box">
+      <h3>Footer</h3>
+      <p>This is the footer content.</p>
+      <p>It should be scrollable.</p>
+      <p>Make sure the height is 200px.</p>
+    </div>
+  </body>
+</html>
