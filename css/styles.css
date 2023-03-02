@@ -79,7 +79,7 @@ div , p{
 }
 
 /* make a heightand scorll for footer* version 1.0*/
-.footer{
+p.one {
 	height: 200px:
 	width: 960px;
 	overflow: scroll;
