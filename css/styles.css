@@ -88,6 +88,9 @@ div , p{
 	width: 960px;
 	overflow: scroll;
 }
+p.two{
+	overflow: scroll;
+}
 /* other code */
 /** {
   padding: 5px;
