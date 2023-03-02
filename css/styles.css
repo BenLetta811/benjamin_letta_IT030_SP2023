@@ -2,7 +2,7 @@
 .parent * {
 	padding: 5px;
 	margin: 6px;
-	width=960px
+	width: 960px;
 }
 
 li{
@@ -16,6 +16,11 @@ li{
 	height: 100px;
 }
 
+.right-column li {
+	display: block;
+	list-style-type: square;
+	height: 100px;
+}
 .left-column {
 	width: 620px;
 	float: left;
