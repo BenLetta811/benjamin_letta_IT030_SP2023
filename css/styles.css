@@ -10,9 +10,13 @@ li{
 }
 
 /*list the bullets to sqaures*/
-.right-box ul {
+#right-column ul {
 	list-style-type: square;
 	height: 100px;
+}
+
+#left-column {
+	width: 620px;
 }
 
 body {
