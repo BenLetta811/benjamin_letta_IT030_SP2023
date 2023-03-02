@@ -72,7 +72,7 @@ div , p{
 	cursor: pointer;
 }
 .click-me:hover{
-	background-color: white;
+	background-color: gray;
 	color: black;
 	border: 1px solid black;
 }
