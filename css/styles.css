@@ -66,7 +66,7 @@ div , p{
 /*Create button to open to Hofstra.edu*/
 .click-me{
 	font: 16px;
-	background-color: gray;
+	background-color: white;
 	border: none;
 	text-decoration: none;
 	cursor: pointer;
