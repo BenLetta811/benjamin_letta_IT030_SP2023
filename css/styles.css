@@ -5,7 +5,7 @@
 	width: 960px;
 }
 
-li{
+.inline li{
 	display: inline;
 	margin-right: 10px;
 }
@@ -115,6 +115,43 @@ div , p{
  p.two{
 	overflow: scroll;
 }
+/*new code*/
+* {
+	box-sizing: border-box;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+	color: black;
+	margin: 6px;
+	padding: 5px;
+   }
+
+      .gray-box {
+        background: #eee;
+      }
+
+      .square-list {
+        list-style-type: square;
+      }
+
+      #click-me-btn {
+        background-color: white;
+        border: none;
+      }
+
+      #click-me-btn:hover {
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+      }
+
+      #coming-soon {
+        display: none;
+      }
+
+      #footer {
+        height: 200px;
+        overflow: auto;
+      }
 /* other code */
 /** {
   padding: 5px;
