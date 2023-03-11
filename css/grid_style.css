@@ -17,7 +17,6 @@ body {
 /*Define the basic*/
  .grid {
      display: grid;
-
      gap: 20px;
      grid-template-areas: "nav" "article" "sidebar" "second_sidebar" "imageBox"  "footer";
 }
@@ -96,12 +95,12 @@ nav li a:hover{
             and change as needed
         */
      .grid{
-        grid-template-columns: 3fr 1fr 1fr;
+        grid-template-columns: 1fr 3fr ;
         grid-template-areas: 
-        "nav      nav      nav "
-        "article  acticle  second_sidebar"
-        "imageBox imageBox sidebar"
-        "footer   footer   footer";
+        "nav      nav"
+        "article  second_sidebar"
+        "imageBox sidebar"
+        "footer   footer";
      }
 
 
