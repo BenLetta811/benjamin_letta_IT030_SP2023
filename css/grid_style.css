@@ -121,8 +121,8 @@ nav li a:hover{
 
          /*what is missing here*/
          "nav      nav            nav"
-         "article  second_sidebar sidebar" 
-         "imageBox second_sidebar sidebar" 
+         "article  sidebar second_sidebar" 
+         "imageBox sidebar second_sidebar" 
          "footer   footer footer";
     }
 
