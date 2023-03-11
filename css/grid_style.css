@@ -95,6 +95,14 @@ nav li a:hover{
         /*This break point needs a .grid -- hint: copy from another breakpoint 
             and change as needed
         */
+     .grif{
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas: 
+        "nav nav"
+        "article second_sidebar"
+        "imageBox sidebar"
+        "footer footer"
+     }
 
 
  #sidebar {
@@ -112,7 +120,7 @@ nav li a:hover{
          grid-template-areas: 
 
          /*what is missing here*/
-
+         "nav nav nav"
          "article second_sidebar sidebar" 
          "imageBox second_sidebar sidebar" 
          "footer footer footer";
@@ -129,7 +137,7 @@ nav li a:hover{
      display: flex;
      flex-wrap: wrap;
 }
- article {
+ .article {
      grid-area: article;
     /* <section class="article"> */
      border: 1px solid black;
@@ -173,4 +181,6 @@ nav li a:hover{
     /* <section class="article"> */
      border: 1px solid black;
      padding: 10px;
+     height: 200px;
+     overflow: auto;
 }
