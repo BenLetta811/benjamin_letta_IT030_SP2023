@@ -75,11 +75,10 @@ nav li a:hover{
         
         grid-template-columns: 1fr 3fr; /*This does not feel right is the column width OK?*/
          grid-template-areas: 
-         "nav      nav" 
-         "article  article " 
-         "article  article " 
-         "imageBox second_sidebar "
-         "footer   footer"; 
+         "nav      nav nav" 
+         "article  article article " 
+         "imageBox imageBox second_sidebar "
+         "footer   footer footer"; 
          /*What is missing here?*/
     }
 
