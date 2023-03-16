@@ -1,5 +1,44 @@
-<div id="myCoolDivID">I am some placeholder text</div>
-<script type="text/javascript">
-	document.getElementById("myCoolDivID").innerHTML ="The Time is " +new Date().getFullYear();
-  
-</script>
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <meta name="description" content="IT030 Exercise 4 by Ben Letta">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Benjamin Letta">
+  <title>java example</title>
+   <link href="css/styles.css" type="text/css" rel="stylesheet"  />             
+  </head>
+	<body>
+	<div id="myCoolDivID">I am some placeholder text</div>
+
+	<div id="myOtherCoolDivID">I am some text</div>
+
+	<div id="myAnotherCoolDivID">Placeholder text</div>
+
+
+
+
+	<script type="text/javascript">
+
+	var hours = new Date().getHours();
+
+	var w = window.innerWidth;
+	console.log (w);
+
+		document.getElementById("myCoolDivID").innerHTML ="The Time is " +new Date().getDate();
+
+		document.getElementById("myAnotherCoolDivID").innerHTML ="Hours: " + hours;
+	if(hours<12) {
+		document.getElementById("myOtherCoolDivID").textContent = "It is Morning and the time is:" + hours + ', thanks';
+	           } else if (hours === 7) {
+	    document.getElementById("myOtherCoolDivID").innerHTML = "Its evening";
+	           } else if (hours > 12){
+	    document.getElementById("myOtherCoolDivID").innerHTML = "It not Morning and the time is:" + hours + ', thanks';
+	 }
+	 	else{
+        document.getElementById("myCoolDivID").innerHTML ="I am sorry but theres nothing their";
+	 } 
+	</script>
+
+	</body>
+</html>
