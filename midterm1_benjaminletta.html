@@ -23,12 +23,21 @@
     "section_content"
     "content_one"
     "sidebar"
-    /*"ad"*/
+    "ad"
     "footer";
 }
  .main-head {
     background: #44DA30; /*black header*/
     color: black;
+ }
+ .section_content {
+  background:  #30CEBD;
+  color: white;
+ }
+
+ .sidebar {
+  background: #1B8016;
+  color: black;
  }
 
 }
@@ -107,6 +116,7 @@
 
  .main-head {
      grid-area: header;
+     text-align: center;
      border: 1px solid black;
      padding: 5px;
 }
@@ -172,10 +182,12 @@
   <section class="section_content">
     <h1>Welcome</h1>
   	
-    <img id= "content_img" src="box.jpg" width="100px" height="100px">
+    <!---<img id= "content_img" src="box.jpg" width="100px" height="100px">-->
 
     <p>
       Hello, my is Benjamin Letta and here is my resume website. Here you can Review my educational experience, work history, and volunter work. You can even view some interests and activites as well. 
+    </p>
+    <p>  
     
       In this layout, we display the areas in source order for any screen less
       that 500 pixels wide. We go to a two column layout, and then to a three
@@ -216,7 +228,17 @@
 
   </article>
 
-  <aside class="sidebar"></aside>
+  <aside class="sidebar">
+  <img src="images/markus-winkler-unsplash.jpg" alt="resume" title="A picutre of a clipboard" height="200px" width="200px"> 
+  <figure>
+    <p>
+     <figcaption>Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Winkler</a> on <a href="https://unsplash.com/photos/7iSEHWsxPLw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </figcaption>
+    </p> 
+  </figure>
+  
+  </aside>
+  
   
 
 
