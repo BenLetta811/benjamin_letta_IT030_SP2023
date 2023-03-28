@@ -45,8 +45,8 @@
     grid-template-columns: 1fr 3fr; /*fr = fraction*/
     grid-template-areas:
       "about_header  about_header"
-      "section_about section_about"
-      "content_about content_about"
+      "sidebar_about section_about"
+      "sidebar_about content_about"
       "footer      footer";
   }
 
@@ -58,7 +58,7 @@
 
 /*---------------------------------------------------------------------------*/
 @media only screen and (min-width: 768px) /*The min width of screen has to be 768 px for this style to take effect*/ {
-  .wrapper {
+  .wrapper1 {
     grid-template-columns: 1fr 3fr;
     grid-template-areas:
       "about_header about_header"
@@ -76,7 +76,7 @@
 /*---------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 1024px) /*and (max-width: 1023px)*/ {
-  .wrapper {
+  .wrapper1 {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
       "about_header about_header  about_header"
@@ -162,7 +162,7 @@
   		
   	</content_about>
 
-  	<siderbar_about class="siderbar_about">
+  	<siderbar_about class="siderbar_about">sidebar
 
   	</siderbar_about>
 
