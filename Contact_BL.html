@@ -6,13 +6,167 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Professor Rahman">
   <title>Contact</title>
+  <style>
+body{
+ font-family: Arial, Verdana, sans-serif ;
+ font size: 12px;
+ font color: black;
 
+ }
+
+ .wrapper2 {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "contact_header"
+    "nav"
+    "name"
+    "email"
+    "phone_number"
+    "footer";
+}
+ .main-head {
+    background: #000; /*black header*/
+    color: white;
+ }
+
+   nav ul {
+    display: flex; /*This defines a flex container - only declared once*/
+    justify-content: space-between;
+  }
+
+/*---------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 576px) { /*The min width of screen has to be 640 px for this style to take effect*/
+  .wrapper2 {
+    grid-template-columns: 1fr 3fr; /*fr = fraction*/
+    grid-template-areas:
+      "contact_header contact_header"
+      "nav     nav"
+      "name name"
+      "email email"
+      "phone_number  footer";
+  }
+
+
+  nav ul {
+    justify-content: space-between;
+  }
+
+
+   .main-head{
+    background: #ddd; /*gray*/
+    color: black;
+  }
+}
+
+
+/*---------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) /*The min width of screen has to be 768 px for this style to take effect*/ {
+  .wrapper2 {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "header header  header"
+      "nav    name name"
+      "nav   email email"
+        "phone_number phone_number  footer";
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+   .main-head{background: #E5BCB3} /*pink*/
+}
+
+/*---------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1024px) /*and (max-width: 1023px)*/ {
+  .wrapper2 {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "contact_header contact_header contact_header"
+      "nav    name  email"
+      "nav    phone_number phone_number"
+      "footer footer  footer";
+  }
+
+  nav ul {
+    flex-direction: column;
+
+  }
+  .main-head{background: #B3E1E5; /*light blue*/
+    color: black;}
+}
+
+/*---------------------------------------------------------------------------*/
+
+
+ .main-head2 {
+     grid-area: contact_header;
+     border: 1px solid black;
+     padding: 5px;
+}
+ .name {
+     grid-area: name;
+     border: 1px solid black;
+     padding: 5px;
+}
+ .email {
+     grid-area: email;
+     border: 1px solid black;
+     padding: 5px;
+}
+ .main-nav {
+     grid-area: nav;
+     border: 1px solid black;
+     padding: 5px;
+}
+ .phone_number {
+     grid-area: phone_number;
+     border: 1px solid black;
+     padding: 5px;
+}
+ .ad {
+     grid-area: ad;
+     border: 1px solid black;
+     padding: 5px;
+}
+ .main-footer {
+     grid-area: footer;
+     border: 1px solid black;
+     padding: 5px;
+}
+ #content_img{
+     float: left;
+     padding: 10px;
+}
+
+</style>
   </head>
   <body>
+  <div class="wrapper1">
+    <contact_header class="main-head2">
   	<h1> My Contact Page</h1>
+    </contact_header>
+
+    <name class="name">
   	<p> Name: Benjamin Letta</p>
+    </name>
+
+    <email class="email">
   	<p> Email: bletta1@pride.hofstra.edu</p>
+    </email>
+    <phone_number class="phone_number">
     <p> Phone Number: 937-214-1985</p>
+    </phone_number>
+
+    <footer id="footer" class="main-footer">The footer
+
+    </footer>
+  </div>
+  <script type="text/javascript" src="js/midterm_javascript.js"></script>
+
   </body>
 
  </html>
