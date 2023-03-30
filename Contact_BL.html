@@ -2,9 +2,9 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-    <meta name="description" content="IT130 Exercise 2 by Ben Letta">
+    <meta name="description" content="midterm2_benjaminletta">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Professor Rahman">
+    <meta name="author" content="Benjamin Letta">
   <title>Contact</title>
   <style>
 body{
@@ -25,10 +25,6 @@ body{
     "phone_number"
     "footer";
 }
- .main-head {
-    background: #000; /*black header*/
-    color: white;
- }
 
    nav ul {
     display: flex; /*This defines a flex container - only declared once*/
@@ -53,11 +49,6 @@ body{
     justify-content: space-between;
   }
 
-
-   .main-head{
-    background: #ddd; /*gray*/
-    color: black;
-  }
 }
 
 
@@ -66,7 +57,7 @@ body{
   .wrapper2 {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
-      "header header  header"
+      "contact_header contact_header contact_header"
       "nav    name name"
       "nav   email email"
         "phone_number phone_number  footer";
@@ -76,7 +67,6 @@ body{
     flex-direction: column;
   }
 
-   .main-head{background: #E5BCB3} /*pink*/
 }
 
 /*---------------------------------------------------------------------------*/
@@ -95,8 +85,6 @@ body{
     flex-direction: column;
 
   }
-  .main-head{background: #B3E1E5; /*light blue*/
-    color: black;}
 }
 
 /*---------------------------------------------------------------------------*/
@@ -104,28 +92,38 @@ body{
 
  .main-head2 {
      grid-area: contact_header;
-     border: 1px solid black;
+     border: 3px solid black;
      padding: 5px;
+     background: #44DA30; /*green*/
+     color: black;
 }
  .name {
      grid-area: name;
-     border: 1px solid black;
+     border: 3px solid black;
      padding: 5px;
+     background: #44DA30; 
+     color: black;
 }
  .email {
      grid-area: email;
-     border: 1px solid black;
+     border: 3px solid black;
      padding: 5px;
+     background: #44DA30; 
+     color: black;
 }
  .main-nav {
      grid-area: nav;
-     border: 1px solid black;
+     border: 3px solid black;
      padding: 5px;
+     background: #44DA30; /*black header*/
+     color: black;
 }
  .phone_number {
      grid-area: phone_number;
-     border: 1px solid black;
+     border: 3px solid black;
      padding: 5px;
+     background: #44DA30; /*black header*/
+     color: black;
 }
  .ad {
      grid-area: ad;
@@ -155,7 +153,7 @@ body{
 
     <ul>
       <li><a href="midterm2_benjaminletta.html">Main Page</a></li>
-      <li><a href="Contact_BL.html">Contact</a></li>
+      <li><a href="about_BL.html">About</a></li>
       <li><a href="showcase">Showcase</a></li>
     </ul>
     </nav>
