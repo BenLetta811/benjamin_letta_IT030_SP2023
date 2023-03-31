@@ -24,8 +24,8 @@
   grid-template-areas:
     "about_header"
     "nav"
-    "section_about"
     "content_about"
+    "section_about"
     "footer";
 }
  .main-head1 {
@@ -46,8 +46,8 @@
     grid-template-areas:
       "about_header  about_header"
       "nav nav"
-      "section_about section_about"
       "content_about section_about"
+      "section_about section_about"
       "footer      footer";
   }
 
@@ -64,8 +64,8 @@
     grid-template-areas:
      "about_header  about_header about_header"
      "nav nav nav"
-     "section_about section_about section_about"
      "content_about content_about content_about"
+     "section_about section_about section_about"
      "footer      footer footer";
   }
 
@@ -82,13 +82,14 @@
     grid-template-columns: 1fr 4fr 1fr; 
     grid-template-areas:
       "about_header about_header  about_header"
-      "section_about content_about nav"
-      "section_about content_about nav"
+      "content_about section_about nav"
+      "content_about section_about nav"
       "footer footer  footer";
   }
 
   nav ul {
     flex-direction: column;
+    justify-content: space-between;
    }
 }
 
@@ -161,7 +162,7 @@
     <ul>
       <li><a href="midterm2_benjaminletta.html">Main Page</a></li>
       <li><a href="Contact_BL.html">Contact</a></li>
-      <li><a href="showcase">Showcase</a></li>
+      <li><a href="showcase.BL.html">Showcase</a></li>
     </ul>
     </nav>
 
@@ -175,18 +176,34 @@
 
   	<content_about class="content_about">
   	<h2>Educational History</h2>
-    </br>
+    <hr/ >
     <h5>Morristown High School</h5>
 
   	<p>Graduated June 2020 </br>
-      Member of National Honor Society
+      Member of National Honor Society</br>
+      Memeber of Marching Band
     </p>
-    </br>
+    <hr/ >
     <h5>Hofstra University, 2020-2024</h5>
     <p>Major: Information Systems</p>
-    </br>
 
-  	<p>Coursework: Economics, Marketing, Python, Excel for Business: formulas, functions, pivot tables and charts X-culture Global Collaboration Certificate: Two months of practical experience as a member of a Global Virtual Team. Developed a high-quality business plan for a multinational company, working with 4 students from 4 different countries. Microsoft Excel Associate Certification.
+  	<p>Coursework:
+      <ul>
+        <li>Economics, Marketing, Python, Excel for Business: 
+          <ul>
+            <li>formulas</li>
+            <li>functions</li>
+            <li>pivot tables</li>
+            <li>charts</li>
+          </ul>
+          </li> 
+        <li>X-culture Global Collaboration Certificate: 
+          <ul>
+            <li>Two months of practical experience as a member of a Global Virtual Team. Developed a high-quality business plan for a multinational company, working with 4 students from 4 different countries.</li>
+          </ul>
+        </li>
+        <li>Microsoft Excel Associate Certification.</li>
+      </ul>
     </p>
 
   	</content_about>
