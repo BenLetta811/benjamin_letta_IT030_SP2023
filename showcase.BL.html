@@ -27,6 +27,98 @@
   		padding:15px;
   		border: 2px solid #000000;
   	}
+  	/*---------------------------------------------------------------------------*/
+  	.wrapper3 {
+  		display: grid;
+  		gap: 20px;
+  		grid-template-areas:
+  		"s_header"
+  		"nav"
+  		"w_table"
+  		"v_table"
+  		"footer";
+}
+	nav ul {
+    display: flex; /*This defines a flex container - only declared once*/
+    justify-content: space-between;
+  }
+  /*---------------------------------------------------------------------------*/
+  
+@media only screen and (min-width: 576px) { /*The min width of screen has to be 640 px for this style to take effect*/
+  .wrapper3 {
+    grid-template-columns: 1fr 2fr; /*fr = fraction*/
+    grid-template-areas:
+        "s_header s_header"
+  		"nav nav"
+  		"w_table w_table"
+  		"v_table v_table"
+  		"footer footer";
+  	}
+
+  	nav ul {
+    justify-content: space-between;
+  }
+}
+
+/*---------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) /*The min width of screen has to be 768 px for this style to take effect*/ {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+    "s_header s_header"
+  		"nav nav"
+  		"w_table w_table"
+  		"v_table v_table"
+  		"footer footer";
+  	}
+
+  	nav ul {
+    justify-content: space-between;
+  }
+}
+
+/*---------------------------------------------------------------------------*/
+@media only screen and (min-width: 1024px) /*and (max-width: 1023px)*/ {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "s_header s_header  s_header"
+      "w_table v_table nav"
+      "w_table v_table nav"
+      "footer footer  nav";
+  }
+
+  nav ul {
+    flex-direction: column;
+
+  }
+ 
+}
+
+/*---------------------------------------------------------------------------*/
+
+    .main-head3 {
+     grid-area: s_header;
+     text-align: center;
+     border: 2px solid black;
+     padding: 5px;}
+
+     .main-nav {
+     grid-area: nav;
+     border: 2px solid black;
+     padding: 5px;}
+
+     .w_table{
+     	grid-area: w_table;
+     	border: 2px solid black;
+     	padding: 3px;
+     }
+
+     .v_table{
+     	grid-area: v_table;
+     	border: 2px solid black;
+     	padding: 3px;
+     }
 
   	.table1{
   		grid-area: table;
@@ -42,14 +134,24 @@
   		padding: 15px;
   	}
 
+  	.main-footer {
+     grid-area: footer;
+     text-align: center;
+     border: 2px solid black;
+     padding: 5px;
+    }
+
   </style>
 
   </head>
 
   <body>
+  	<div class="wrapper3">
+  	<s_header class="main-head3">
   	<h1>Showcase</h1>
+  	</s_header>
 
-  	 <nav>
+  	 <nav class="main-nav">
 
   	<ul>
       <li><a href="midterm2_benjaminletta.html">About</a></li>
@@ -58,6 +160,7 @@
     </ul>
 	 </nav>
 
+	 <w_table class="w_table">
 	 <h3>Work Experience</h3>
 
 	  <table class="table1">
@@ -114,7 +217,9 @@
 	  	</tr>
 	  	
 	  </table>
+	  </w_table>
 
+	   <v_table class="v_table">
 	   <h3>Volunteer Experience</h3>
 
 	  <table class="table2">
@@ -174,14 +279,14 @@
 	  	
 	  	
 	  </table>
+	  </v_table>
 
 	  <footer id="footer" class="main-footer">The footer
 
 
-
-
       </footer>
      <script type="text/javascript" src="js/midterm_javascript.js"></script>
+ </div>
 
 
   </body>
