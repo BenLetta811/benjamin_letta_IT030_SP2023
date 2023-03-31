@@ -32,48 +32,43 @@
 
 /*---------------------------------------------------------------------------*/
 
- .main-head3 {
- 	grid-area: s_header;
-     text-align: center;
-     border: 2px solid black;
-     padding: 5px;
+
+#column1, #column2{
+	float: left;
+	width: 500;
+	margin: 10px;
 }
 
-     .main-nav {
+    .main-head3 {
+ 	grid-area: s_header;
+    text-align: center;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+    .main-nav {
      grid-area: nav;
      border: 2px solid black;
      padding: 5px;
 }
 
-     .w_table{
-     	grid-area: w_table;
-     	border: 2px solid black;
-     	padding: 3px;
-     	width: 750px;
-}
-
-     .v_table{
-     	grid-area: v_table;
-     	border: 2px solid black;
-     	padding: 3px;
-     	width: 750px;
-}
-
   	.table1{
   		grid-area: table;
   		border solid: 1px;
+  		display: block;
   		border-collapse: collapse;
-  		padding: 15px;
+  		padding: 10px;
 }
 
   	.table2{
   		grid-area: table;
   		border solid: 1px;
+  		display: block;
   		border-collapse: collapse;
-  		padding: 15px;
+  		padding: 10px;
 }
 
-  	.main-footer {
+  .main-footer {
      grid-area: footer;
      text-align: center;
      border: 2px solid black;
@@ -85,7 +80,7 @@
   </head>
 
   <body>
-  	<div class="wrapper3">
+  	
   	<s_header class="main-head3">
   	<h1>Showcase</h1>
   	</s_header>
@@ -101,7 +96,7 @@
 
 	
 
-	  <table class="table1">
+	  <table id="column1" class="table1">
 	  	<tr>
 	  		<th>Company Name</th>
 	  		<th>Work Experience</th>
@@ -217,14 +212,13 @@
 	  	
 	  	
 	  </table>
-	  </v_table>
+	  
+<footer id="footer" class="main-footer">The footer
 
-	  <footer id="footer" class="main-footer">The footer
 
-
-      </footer>
-     <script type="text/javascript" src="js/midterm_javascript.js"></script>
- </div>
+</footer>
+<script type="text/javascript" src="js/midterm_javascript.js"></script>
+ 
 
 
   </body>

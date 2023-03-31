@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+    <meta name="description" content="Midterm by Ben Letta">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Benjamin Letta">
+  <title>Showcase</title>
+
+  <style>
+  .table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Media queries */
+@media (min-width: 576px) {
+  table {
+    display: block;
+  }
+  td, th {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  td, th {
+    width: 50%;
+    display: table-cell;
+  }
+}
+
+@media (min-width: 1024px) {
+  td, th {
+    width: auto;
+    display: table-cell;
+  }
+}
+  </style>
+  </head>
+<body>
+
+<div class="table-wrapper">
+  <table>
+    <thead>
+      <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 3, Cell 1</td>
+        <td>Row 3, Cell 2</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html
