@@ -28,72 +28,7 @@
   		border: 2px solid #000000;
   	}
   	/*---------------------------------------------------------------------------*/
-  	.wrapper3 {
-  		display: grid;
-  		gap: 20px;
-  		grid-template-areas:
-  		"s_header"
-  		"nav"
-  		"w_table"
-  		"v_table"
-  		"footer";
-}
-	nav ul {
-    display: flex; /*This defines a flex container - only declared once*/
-    justify-content: space-between;
-  }
-  /*---------------------------------------------------------------------------*/
-  
-@media only screen and (min-width: 576px) { /*The min width of screen has to be 640 px for this style to take effect*/
-  .wrapper3 {
-    grid-template-columns: 1fr 2fr; /*fr = fraction*/
-    grid-template-areas:
-        "s_header s_header"
-  		"nav nav"
-  		"w_table w_table"
-  		"v_table v_table"
-  		"footer footer";
-  	}
-
-  	nav ul {
-    justify-content: space-between;
-  }
-}
-
-/*---------------------------------------------------------------------------*/
-@media only screen and (min-width: 768px) /*The min width of screen has to be 768 px for this style to take effect*/ {
-  .wrapper {
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas:
-    "s_header s_header"
-  		"nav nav"
-  		"w_table w_table"
-  		"v_table v_table"
-  		"footer footer";
-  	}
-
-  	nav ul {
-    justify-content: space-between;
-  }
-}
-
-/*---------------------------------------------------------------------------*/
-@media only screen and (min-width: 1024px) /*and (max-width: 1023px)*/ {
-  .wrapper {
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas:
-      "s_header s_header  s_header"
-      "w_table v_table nav"
-      "w_table v_table nav"
-      "footer footer  nav";
-  }
-
-  nav ul {
-    flex-direction: column;
-
-  }
- 
-}
+  	
 
 /*---------------------------------------------------------------------------*/
 
