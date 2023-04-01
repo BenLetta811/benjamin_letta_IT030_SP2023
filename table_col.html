@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <meta charset="UTF-8">
-    <meta name="description" content="Midterm by Ben Letta">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Benjamin Letta">
-  <title>Showcase</title>
-
+<head>
+  <title>Two Tables Responsive Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-  .table-wrapper {
+    .table-container {
+  width: 100%;
   overflow-x: auto;
 }
 
 table {
-  width: 100%;
   border-collapse: collapse;
+  width: 100%;
 }
 
 th, td {
@@ -23,43 +20,47 @@ th, td {
   border-bottom: 1px solid #ddd;
 }
 
-/* Media queries */
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
+  .table-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   table {
-    display: block;
-  }
-  td, th {
-    display: inline-block;
-    width: 50%;
+    flex-basis: 50%;
   }
 }
 
-@media (min-width: 768px) {
-  td, th {
-    width: 50%;
-    display: table-cell;
+@media screen and (min-width: 768px) {
+  table {
+    flex-basis: 45%;
+    margin-right: 5%;
+  }
+  
+  table:last-of-type {
+    margin-right: 0;
   }
 }
 
-@media (min-width: 1024px) {
-  td, th {
-    width: auto;
-    display: table-cell;
+@media screen and (min-width: 1024px) {
+  table {
+    flex-basis: 30%;
+    margin-right: 5%;
+  }
+  
+  table:last-of-type {
+    margin-right: 0;
   }
 }
   </style>
-  </head>
+</head>
 <body>
-
-<div class="table-wrapper">
-  <table>
-    <thead>
+  <div class="table-container">
+    <table>
       <tr>
-        <th>Column 1</th>
-        <th>Column 2</th>
+        <th>Header 1</th>
+        <th>Header 2</th>
       </tr>
-    </thead>
-    <tbody>
       <tr>
         <td>Row 1, Cell 1</td>
         <td>Row 1, Cell 2</td>
@@ -68,12 +69,24 @@ th, td {
         <td>Row 2, Cell 1</td>
         <td>Row 2, Cell 2</td>
       </tr>
+    </table>
+  </div>
+
+  <div class="table-container">
+    <table>
       <tr>
-        <td>Row 3, Cell 1</td>
-        <td>Row 3, Cell 2</td>
+        <th>Header A</th>
+        <th>Header B</th>
       </tr>
-    </tbody>
-  </table>
-</div>
+      <tr>
+        <td>Row A, Cell 1</td>
+        <td>Row A, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row B, Cell 1</td>
+        <td>Row B, Cell 2</td>
+      </tr>
+    </table>
+  </div>
 </body>
-</html
+</html>
