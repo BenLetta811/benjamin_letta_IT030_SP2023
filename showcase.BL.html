@@ -28,7 +28,7 @@ font color: black;
   	border: 2px solid #000000;
   }
 /*---------------------------------------------------------------------------*/
-/*.wrapper {
+.wrapper {
   display: grid;
   gap: 20px;
   grid-template-areas:
@@ -39,14 +39,14 @@ font color: black;
   }
 
  /*.main-head{
- 	width: 570px;
+ 	width: 578px;
  }
 
  .main-nav{
- 	width: 570px;
+ 	width: 578px;
  }
 
- .table1{
+ /*.table1{
  	width: 570px;
  }
 
@@ -65,19 +65,72 @@ nav ul {
 
 
 /*---------------------------------------------------------------------------*/
+@media only screen and (min-width: 576px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr; /*fr = fraction*/
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "table table"
+    "footer footer";
+}
+  nav ul {
+  	display: flex; /*This defines a flex container - only declared once*/
+    justify-content: space-between;
+  }
+}
+/*---------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+	.wrapper {
+    grid-template-columns: 1fr 4fr 1fr; /*fr = fraction*/
+    grid-template-areas:
+    "nav header header"
+    "nav table table"
+    "nav table table"
+    "footer footer footer";
+}
+nav ul {
+    flex-direction: column;
+  }
+}
+/*---------------------------------------------------------------------------*/
+@media only screen and (min-width: 1024px) /*The min width of screen has to be 768 px for this style to take effect*/ {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+    "nav header header"
+    "nav table table"
+    "nav table table"
+    "nav footer footer";
+}
+nav ul {
+    flex-direction: column;
+  }
+  #table1{
+  	width: 960px;
+  }
+  .main_head{
+  	width: 960px;
+  }
+  .main_height{
+  	height: 200px;
+  }
+}
+/*---------------------------------------------------------------------------*/
      	#table1{
   		grid-area: table;
   		border solid: 1px;
-  		/*display: block;*/
+  		display: block;
   		border-collapse: collapse;
   		padding: 10px;
   		
 }
+/*---------------------------------------------------------------------------*/
 
   	#table2{
   		grid-area: table;
   		border solid: 1px;
-  		/*display: block;*/
+  		display: block;
   		border-collapse: collapse;
   		padding: 10px;
   		
@@ -126,14 +179,13 @@ nav ul {
   	<nav class="main-nav">
 
   	<ul>
-      <li><a href="midterm2_benjaminletta.html">About</a></li>
+      <li><a href="midterm2_benjaminletta.html">Main Page</a></li>
       <li><a href="about_BL.html">Contact</a></li>
       <li><a href="Contact_BL.html">Showcase</a></li>
     </ul>
 	 </nav>
 
 	<div>
-
 	  <table id="table1">
 	  	<tr>
 	  		<th>Company Name</th>
@@ -187,13 +239,6 @@ nav ul {
 	  		</td>
 	  		
 	  	</tr>
-	  	
-	  </table>
-	</div>
-	  
-
-    <div>
-	  <table id="table2">
 	  	<tr>
 	  		<th>Organization</th>
 	  		<th>Volunteer Experience</th>
