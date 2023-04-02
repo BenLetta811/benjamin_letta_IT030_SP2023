@@ -44,7 +44,7 @@
 
 /*---------------------------------------------------------------------------*/
 
-@media only screen and (min-width: 576px) and (max-width: 768px) { /*The min width of screen has to be 640 px for this style to take effect*/
+@media only screen and (min-width: 576px) and (max-width: 767px) { /*The min width of screen has to be 640 px for this style to take effect*/
   .wrapper {
     grid-template-columns: 1fr 3fr; /*fr = fraction*/
     grid-template-areas:
@@ -67,12 +67,12 @@
 /*---------------------------------------------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 1023px)/*The min width of screen has to be 768 px for this style to take effect*/ {
   .wrapper {
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
-     "header  header"
-     "nav nav"
-     "section_about section_about"
-     "content_about content_about"
+     "header  header header"
+     "nav nav nav"
+     "content_about content_about content_about"
+     "section_about section_about secion_about"
      "footer  footer footer";
   }
 
