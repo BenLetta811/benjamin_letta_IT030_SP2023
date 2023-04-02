@@ -13,7 +13,6 @@
  font-family: Arial, Verdana, sans-serif ;
  font size: 12px;
  font color: black;
-
  }
 
 /*---------------------------------------------------------------------------*/
@@ -24,8 +23,8 @@
   grid-template-areas:
     "header"
     "nav"
-    "section_content"
     "content_one"
+    "section_content"
     "sidebar"
     "footer";
 }
@@ -34,47 +33,27 @@
     background: #44DA30; /*black header*/
     color: black;
  }
-
- .main-nav {
-  background: #1B8016;
-  color: black;
- }
-
- .section_content {
-  background:  #30CEBD;
-  color: white;
- }
-
- .content_one {
-  background:  #30CEBD;
-  color: white;
- }
-
- .ad {
-  background: #1B8016;
-  color: white;
- }
-
- .sidebar {
-  background: #1B8016;
-  color: white;
-  width: 200px;
-  display: none;
- }
+  .content_about{
+    display: none;
+  }
+ .sidebar{
+    display: none;
+  }
 
    nav ul {
     display: flex; /*This defines a flex container - only declared once*/
     justify-content: space-between;
   }
+
 @media only screen and (min-width: 576px) { /*The min width of screen has to be px for this style to take effect*/
   .wrapper {
     grid-template-columns: 1fr 3fr; /*fr = fraction*/
     grid-template-areas:
       "header  header"
-      "nav     nav"
-      "sidebar section_content"
-      "second_sidebar content_one"
-      "ad      footer";
+      "nav nav"
+      "section_about section_about"
+      "sidebar sidebar"
+      "footer      footer";
   }
 
 
@@ -87,22 +66,27 @@
     background: #22E618; /*gray*/
     color: black;
   }
+ 
   /*---------------------------------------------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 1023px)/*The min width of screen has to be 768 px for this style to take effect*/ {
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
-      "header header  header"
-      "nav    section_content sidebar"
-      "second_sidebar    content_one ad"
-        "footer footer  footer";
+      "header  header header"
+     "nav nav nav"
+     "content_about content_about content_about"
+     "section_about section_about section_about"
+     "footer  footer footer";
   }
 
   nav ul {
-    flex-direction: column;
+    justify-content: space-between;
   }
 
-   .main-head{background: #17F60C} 
+   .main-head{background: #17F60C}
+   .content_about{
+    display: inherit;} 
+  
 }
 
 /*---------------------------------------------------------------------------*/
@@ -111,10 +95,10 @@
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
-      "nav header  sidebar"
-      "nav    section_content sidebar"
-      "second_sidebar    content_one ad"
-      "second_sidebar footer  ad";
+      "header header  header"
+      "content_about content_about nav"
+      "section_about section_about sidebar"
+      "footer footer  footer";
   }
 
   nav ul {
@@ -123,6 +107,12 @@
 
   .main-head{background:  #17D80E; /*light blue*/
     color: black;
+  }
+  .content_about{
+    display: inherit;}
+
+  .sidebar{
+    display: inherit;
   }
 
 
@@ -137,30 +127,33 @@
      border: 2px solid black;
      padding: 5px;
 }
- .section_content {
-     grid-area: section_content;
-     border: 2px solid black;
-     padding: 3px;
+ .content_about {
+     grid-area: content_about;
+     background:  #30CEBD;
+     color: white;
+     border: 3px solid black;
+     padding: 5px;
 }
- .content_one {
-     grid-area: content_one;
-     border: 2px solid black;
-     padding: 3px;
+ .section_about {
+     grid-area: section_about;
+     background:  #30CEBD;
+     color: white;
+     border: 3px solid black;
+     padding: 5px;
+     overflow: auto;
 }
  .main-nav {
      grid-area: nav;
-     border: 2px solid black;
+     background: #1B8016;
+     border: 1px solid black;
      padding: 5px;
-}
+   }
+
  .sidebar {
      grid-area: sidebar;
      border: 2px solid black;
      padding: 5px;
 }
- .ad {
-     grid-area: ad;
-     border: 2px solid black;
-     padding: 5px;
 }
  .main-footer {
      grid-area: footer;
@@ -177,3 +170,90 @@
   </head>
 
   <body>
+    <div class="wrapper">
+    <header class="main-head">
+    <h1> About Me Page</h1>
+
+    </header>
+
+    <nav class="main-nav">
+
+
+    <ul>
+      <li id='greeting'></li>
+      <li><a href="midterm2_benjaminletta.html">Main Page</a></li>
+      <li><a href="Contact_BL.html">Contact</a></li>
+      <li><a href="showcase.BL.html">Showcase</a></li>
+    </ul>
+    </nav>
+
+
+
+    <content_about class="content_about">
+    <h2>Educational History</h2>
+    <hr/ >
+    <h5>Morristown High School</h5>
+
+    <p>Graduated June 2020 </br>
+      Member of National Honor Society</br>
+      Memeber of Marching Band
+    </p>
+    <hr/>
+    <h5>Hofstra University, 2020-2024</h5>
+    <p>Major: Information Systems</p>
+
+    <p>Coursework:
+      <ul>
+        <li>Economics, Marketing, Python, Excel for Business: 
+          <ul>
+            <li>formulas</li>
+            <li>functions</li>
+            <li>pivot tables</li>
+            <li>charts</li>
+          </ul>
+          </li> 
+        <li>X-culture Global Collaboration Certificate: 
+          <ul>
+            <li>Two months of practical experience as a member of a Global Virtual Team. Developed a high-quality business plan for a multinational company, working with 4 students from 4 different countries.</li>
+          </ul>
+        </li>
+        <li>Microsoft Excel Associate Certification.</li>
+      </ul>
+    </p>
+
+    </content_about>
+
+    <secion_about class="section_about">
+    <h2> About Myself</h2>
+    <p>I grew up in Morristown, New Jersey. I have a sister who will graduate high school the same time graduate in 2024. I have done many things before attending college.I have an interest in Martial Arts since I was younger and have been doing tae kwon do for nearly 10+ years. I’m  Second Degree Black Belt and join an assistant instructor program back in 2018 where I volunteer to help students in classes. I do have hobbies such as playing music. I have been in the band since middle school and play the baritone horn(euphonium). I did 4 years in marching band and wind ensemble. I am interested in computers and have taken two computer science classes such as html and python. I did an short internship with Mayo Performing Arts Center which is a local theater in the town I live. I join a program it when I was a senior to give me insight to prepare for getting a job. That is wher I created m first resume and offer an internship after the program. My position was simple to do online advesting for future events on execl to gather the data. In college,  I have acquired skills for Python, Execl, Microsoft Access, and SQL. Last semester, I pass the mircosoft execl associate certification which is a prerequisite for one of my business classes, but does help for future job positions</p>
+
+    <p>I have done other jobs such as being a busser for Buffalo Wild Wings for short time in the summer of 2021. I came back to Tae kwon Do working part time as an assistant instructor during summer and winter breaks after a semester.</p> 
+
+    <p>I have been involve in religious trips such as a mission for Appalachihia Outreach in Kentucky. Involoing 25 members to come down in one of the poorest county in the country to help rebuild homes for families to help,
+    </p>
+
+    </secion_about>
+
+    <aside class="sidebar">
+
+    <img src="images/stephen-phillips-hostreviews-unsplash.jpg" alt="SQL" title="A picutre of a apps" height="200px" width="200px"> 
+    <figure>
+     <p>
+      <figcaption> Photo by <a href="https://unsplash.com/es/@hostreviews?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Stephen Phillips - Hostreviews.co.uk</a> on <a href="https://unsplash.com/photos/2kH-6T6x_0I?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+     </figcaption>
+     </p> 
+    </figure>
+  
+
+    </aside>
+
+  <footer id="footer" class="main-footer">The footer
+
+  </footer>
+
+  </div>
+  <script type="text/javascript" src="js/midterm_javascript.js"></script>
+
+  </body>
+
+</html>
