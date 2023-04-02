@@ -26,6 +26,7 @@
     "nav"
     "content_about"
     "section_about"
+    "sidebar"
     "footer";
 }
  .main-head1 {
@@ -46,8 +47,9 @@
     grid-template-areas:
       "about_header  about_header"
       "nav nav"
-      "content_about section_about"
+      "content_about contect_about"
       "section_about section_about"
+      "sidebar sidebar"
       "footer      footer";
   }
 
@@ -66,6 +68,7 @@
      "nav nav nav"
      "content_about content_about content_about"
      "section_about section_about section_about"
+     "sidebar sidebar sidebar"
      "footer      footer footer";
   }
 
@@ -83,7 +86,7 @@
     grid-template-areas:
       "about_header about_header  about_header"
       "content_about section_about nav"
-      "content_about section_about nav"
+      "content_about section_about sidebar"
       "footer footer  footer";
   }
 
@@ -208,7 +211,7 @@
 
   	</content_about>
 
-  	<!--<sidebar_about class="sidebar_about">
+  	<aside class="sidebar">
 
     <img src="images/stephen-phillips-hostreviews-unsplash.jpg" alt="SQL" title="A picutre of a apps" height="200px" width="200px"> 
     <figure>
@@ -219,7 +222,7 @@
     </figure>
   
 
-  	</sidebar_about>-->
+  	</aside>
 
   	<footer id="footer" class="main-footer">The footer
 
