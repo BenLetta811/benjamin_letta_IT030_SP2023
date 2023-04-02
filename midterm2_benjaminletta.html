@@ -25,6 +25,7 @@
     "section_content"
     "content_one"
     "sidebar"
+    "second_sidebar"
     "ad"
     "footer";
 }
@@ -74,7 +75,7 @@
       "header  header"
       "nav     nav"
       "sidebar section_content"
-      "sidebar content_one"
+      "second_sidebar content_one"
       "ad      footer";
   }
 
@@ -101,7 +102,7 @@
     grid-template-areas:
       "header header  header"
       "nav    section_content sidebar"
-      "nav    content_one ad"
+      "second_sidebar    content_one ad"
         "footer footer  footer";
   }
 
@@ -109,7 +110,7 @@
     flex-direction: column;
   }
 
-   .main-head{background: #17F60C} /*pink*/
+   .main-head{background: #17F60C} 
 }
 
 /*---------------------------------------------------------------------------*/
@@ -118,19 +119,20 @@
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
-      "header header  header"
+      "nav header  sidebar"
       "nav    section_content sidebar"
-      "nav    content_one ad"
-      "nav footer  ad";
+      "second_sidebar    content_one ad"
+      "second_sidebar footer  ad";
   }
 
   nav ul {
     flex-direction: column;
-
   }
+
   .main-head{background:  #17D80E; /*light blue*/
     color: black;
   }
+
 
 }
 
@@ -176,9 +178,13 @@
      border: 2px solid black;
      padding: 5px;
 }
- #content_img{
-     float: left;
-     padding: 10px;
+ .second_sidebar{
+     grid-area: second_sidebar;
+     text-align: center;
+     background: #1B8016;
+     color: white;
+     border: 2px solid black;
+     padding: 5px;
 }
 
 
@@ -224,7 +230,7 @@
 
   <article class="content_one">
   
-    <h1>Content Area One</h1>
+    <h1>What to find on this Page</h1>
 
 
 	
@@ -262,6 +268,9 @@
   </figure>
   
   </aside>
+
+  <div class="second_sidebar">
+  </div>  
   
   
 

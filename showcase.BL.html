@@ -54,7 +54,8 @@ nav ul {
     "nav nav"
     "table table"
     "footer footer";
-}
+  }
+
   nav ul {
   	display: flex; /*This defines a flex container - only declared once*/
     justify-content: space-between;
@@ -62,15 +63,16 @@ nav ul {
 }
 /*---------------------------------------------------------------------------*/
 @media only screen and (min-width: 768px) {
-	.wrapper {
+  .wrapper {
     grid-template-columns: 1fr 4fr 1fr; /*fr = fraction*/
     grid-template-areas:
     "nav header header"
     "nav table table"
     "nav table table"
     "footer footer footer";
- }
-nav ul {
+  }
+
+  nav ul {
     flex-direction: column;
   }
 }
@@ -83,8 +85,9 @@ nav ul {
     "nav table table"
     "nav table table"
     "nav footer footer";
-}
-nav ul {
+  }
+
+  nav ul {
     flex-direction: column;
   }
  /*table{
