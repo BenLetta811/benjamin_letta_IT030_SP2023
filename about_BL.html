@@ -7,7 +7,7 @@
     <meta name="author" content="Benjamin Letta">
   <title>About</title>
 
-  <style>
+<style>
 
  body{
  font-family: Arial, Verdana, sans-serif ;
@@ -41,7 +41,7 @@
 
 /*---------------------------------------------------------------------------*/
 
-@media only screen and (min-width: 576px) { /*The min width of screen has to be 640 px for this style to take effect*/
+@media only screen and (min-width: 576px) and (max-width: 768px) { /*The min width of screen has to be 640 px for this style to take effect*/
   .wrapper1 {
     grid-template-columns: 1fr 3fr; /*fr = fraction*/
     grid-template-areas:
@@ -60,7 +60,7 @@
 
 
 /*---------------------------------------------------------------------------*/
-@media only screen and (min-width: 768px) /*The min width of screen has to be 768 px for this style to take effect*/ {
+@media only screen and (min-width: 768px) and (max-width: 1023px)/*The min width of screen has to be 768 px for this style to take effect*/ {
   .wrapper1 {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
@@ -73,7 +73,7 @@
   }
 
   nav ul {
-    flex-direction: column;
+    justify-content: space-between;;
     width: 260px
   }
 }
@@ -108,12 +108,16 @@
 }
  .section_about {
      grid-area: section_about;
+     background:  #30CEBD;
+     color: white;
      border: 3px solid black;
      padding: 5px;
      overflow: auto;
 }
  .content_about {
      grid-area: content_about;
+     background:  #30CEBD;
+     color: white;
      border: 3px solid black;
      padding: 5px;
 }
@@ -171,8 +175,8 @@
 
   	<secion_about class="section_about">
   	<h2> About Myself</h2>
-  	<p>I grewed up in Morristown, New Jeresy. I have a sister who will gradute high school the same timeI graduate in 2024. I have done many things before attending college.I have an interest in Martial Arts since I was younger and have been doing tae kwon do 
-      for a long time. I am a black belt and join an assitiant instructor program where I volunteer to help stundetns in classes. I do have hobbies such as playing music. I was in the band since middle school and play the bartione horn(euphonium). I did 4 years in marching band and wind ensemble. I have in intested in computers and have took two computer science classes such as html and python. In college, I have acquire skills for python, execl, Mircosoft Access, and SQL. 
+  	<p>I grewed up in Morristown, New Jeresy. I have a sister who will graduate high school the same timeI graduate in 2024. I have done many things before attending college.I have an interest in Martial Arts since I was younger and have been doing tae kwon do 
+    for a long time. I am a black belt and join an assitiant instructor program where I volunteer to help stundetns in classes. I do have hobbies such as playing music. I was in the band since middle school and play the bartione horn(euphonium). I did 4 years in marching band and wind ensemble. I have in intested in computers and have took two computer science classes such as html and python. In college, I have acquire skills for python, execl, Mircosoft Access, and SQL. 
     </p>
 
   	</secion_about>
@@ -224,13 +228,13 @@
 
   	</aside>
 
-  	<footer id="footer" class="main-footer">The footer
+  <footer id="footer" class="main-footer">The footer
 
-  	</footer>
+  </footer>
 
   </div>
-   <script type="text/javascript" src="js/midterm_javascript.js"></script>
+  <script type="text/javascript" src="js/midterm_javascript.js"></script>
 
   </body>
 
- </html>
+</html>
