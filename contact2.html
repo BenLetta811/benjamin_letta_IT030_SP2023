@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Benjamin Letta">
+    <title>Miderm Benjamin Letta</title>
+
+<style>
+
+ body{
+ font-family: Arial, Verdana, sans-serif ;
+ font size: 12px;
+ font color: black;
+ }
+
+/*---------------------------------------------------------------------------*/
+
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "contact_header"
+    "nav"
+    "name"
+    "email"
+    "phone_number"
+    "footer";
+}
+
+   nav ul {
+    display: flex; /*This defines a flex container - only declared once*/
+    justify-content: space-between;
+  }
+
+
+   nav ul {
+    display: flex; /*This defines a flex container - only declared once*/
+    justify-content: space-between;
+  }
+/*---------------------------------------------------------------------------*/
+@media only screen and (min-width: 576px) { /*The min width of screen has to be px for this style to take effect*/
+  .wrapper {
+    grid-template-columns: 1fr 3fr; /*fr = fraction*/
+    grid-template-areas:
+      "contact_header contact_header"
+      "nav     nav"
+      "name name"
+      "email email"
+      "phone_number  footer";
+  }
+
+
+  nav ul {
+    justify-content: space-between;
+  }
+
+
+   .main-head{
+    background: #22E618;
+    color: black;
+  }
+ 
+  /*---------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1023px)/*The min width of screen has to be 768 px for this style to take effect*/ {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+     "contact_header contact_header contact_header"
+      "nav    name name"
+      "nav   email email"
+      "footer phone_number phone_number";
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+}
+
+/*---------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1024px) /*and (max-width: 1023px)*/ {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+     "contact_header contact_header contact_header"
+      "nav    name  email"
+      "nav    phone_number footer";
+  }
+
+  nav ul {
+    flex-direction: column;
+
+  }
+}
+
+/*---------------------------------------------------------------------------*/
+
+
+ .main-head {
+     grid-area: contact_header;
+     text-align: center;
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; /*green*/
+     color: black;
+}
+ .name {
+     grid-area: name;
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; 
+     color: white;
+}
+ .email {
+     grid-area: email;
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; 
+     color: white;
+}
+ .main-nav {
+     grid-area: nav;
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; /*black header*/
+     color: black;
+}
+ .phone_number {
+     grid-area: phone_number;
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; /*black header*/
+     color: white;
+}
+ 
+ .main-footer {
+     grid-area: footer;
+     text-align: center;
+     border: 1px solid black;
+     padding: 5px;
+     background: #30CEBD;
+     color: white;
+}
+
+ </style>
+  </head>
+  <body>
+    <div class="wrapper">
+    <contact_header class="main-head2">
+    <h1> My Contact Page</h1>
+    </contact_header>
+
+    <nav class="main-nav">
+
+
+    <ul>
+      <li><a href="midterm2_benjaminletta.html">Main Page</a></li>
+      <li><a href="about2.html">About</a></li>
+      <li><a href="showcase.BL.html">Showcase</a></li>
+    </ul>
+    </nav>
+
+    <name class="name">
+    <p> <b>Name:</b> Benjamin Letta</p>
+    </name>
+
+    <email class="email">
+    <p> <b>Email:</b> lettabj@gmail.com</p>
+    </email>
+    <phone_number class="phone_number">
+    <p> <b>Phone Number:</b> 973-214-1985</p>
+    </phone_number>
+
+    <footer id="footer" class="main-footer">The footer
+
+    </footer>
+  </div>
+  <script type="text/javascript" src="js/midterm_javascript.js"></script>
+
+  </body>
+
+ </html>
