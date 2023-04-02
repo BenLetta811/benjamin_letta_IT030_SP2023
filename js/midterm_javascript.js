@@ -27,7 +27,7 @@ function checkViewportWidth() {
   const footer = document.querySelector("footer");
   let message = "";
 
-  if (width < 568) {
+  if (width < 577) {
     message = "You are currently on a mobile device";
   } else if (width < 769) {
     message = "You are on a tablet device";

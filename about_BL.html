@@ -33,7 +33,10 @@
     background: #44DA30; /*black header*/
     color: black;
  }
-
+.sidebar{
+    display: none;
+  }
+ 
  nav ul {
     display: flex; /*This defines a flex container - only declared once*/
     justify-content: space-between;
@@ -56,19 +59,19 @@
    nav ul {
     justify-content: space-between;
   }
+
 }
 
 
 /*---------------------------------------------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 1023px)/*The min width of screen has to be 768 px for this style to take effect*/ {
   .wrapper {
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-areas:
      "about_header  about_header about_header"
      "nav nav nav"
      "content_about content_about content_about"
      "section_about section_about section_about"
-     "sidebar sidebar sidebar"
      "footer      footer footer";
   }
 
@@ -93,6 +96,11 @@
     flex-direction: column;
     justify-content: space-between;
    }
+
+   .sidebar{
+    display: inherit;
+  }
+
 }
 
 
@@ -140,10 +148,7 @@
      background: #30CEBD;
      color: white;
 }
- #content_img{
-     float: left;
-     padding: 10px;
-}
+
 
 
 </style>
@@ -170,13 +175,7 @@
     </ul>
     </nav>
 
-  	<secion_about class="section_about">
-  	<h2> About Myself</h2>
-  	<p>I grewed up in Morristown, New Jeresy. I have a sister who will graduate high school the same timeI graduate in 2024. I have done many things before attending college.I have an interest in Martial Arts since I was younger and have been doing tae kwon do 
-    for a long time. I am a black belt and join an assitiant instructor program where I volunteer to help stundetns in classes. I do have hobbies such as playing music. I was in the band since middle school and play the bartione horn(euphonium). I did 4 years in marching band and wind ensemble. I have in intested in computers and have took two computer science classes such as html and python. In college, I have acquire skills for python, execl, Mircosoft Access, and SQL. 
-    </p>
 
-  	</secion_about>
 
   	<content_about class="content_about">
   	<h2>Educational History</h2>
@@ -211,6 +210,17 @@
     </p>
 
   	</content_about>
+
+    <secion_about class="section_about">
+    <h2> About Myself</h2>
+    <p>I grew up in Morristown, New Jersey. I have a sister who will graduate high school the same time graduate in 2024. I have done many things before attending college.I have an interest in Martial Arts since I was younger and have been doing tae kwon do for nearly 10+ years. I’m  Second Degree Black Belt and join an assistant instructor program back in 2018 where I volunteer to help students in classes. I do have hobbies such as playing music. I have been in the band since middle school and play the baritone horn(euphonium). I did 4 years in marching band and wind ensemble. I am interested in computers and have taken two computer science classes such as html and python. I did an short internship with Mayo Performing Arts Center which is a local theater in the town I live. I join a program it when I was a senior to give me insight to prepare for getting a job. That is wher I created m first resume and offer an internship after the program. My position was simple to do online advesting for future events on execl to gather the data. In college,  I have acquired skills for Python, Execl, Microsoft Access, and SQL. Last semester, I pass the mircosoft execl associate certification which is a prerequisite for one of my business classes, but does help for future job positions</p>
+
+    <p>I have done other jobs such as being a busser for Buffalo Wild Wings for short time in the summer of 2021. I came back to Tae kwon Do working part time as an assistant instructor during summer and winter breaks after a semester.</p> 
+
+    <p>I have been involve in religious trips such as a mission for Appalachihia Outreach in Kentucky. Involoing 25 members to come down in one of the poorest county in the country to help rebuild homes for families to help,
+    </p>
+
+    </secion_about>
 
   	<aside class="sidebar">
 
