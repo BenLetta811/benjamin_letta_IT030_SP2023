@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Benjamin Letta">
+    <title>Miderm Benjamin Letta</title>
+
+<style>
+	body{
+font-family: Arial, Verdana, sans-serif ;
+font size: 12px;
+font color: black;
+}
+
+  	
+  th{
+  	background-color:#cccccc;
+  	border: 2px solid #000000;
+  	width: 150px;
+  }
+
+  td{
+  	background-color: #0088dd
+  	padding:15px;
+  	border: 2px solid #000000;
+  }
+
+  .wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+   "header"
+  "nav"
+  "table"
+  "footer";
+  }
+
+  #table1{
+  		grid-area: table;
+  		border solid: 1px;
+  		display: block;
+  		border-collapse: collapse;
+  		padding: 10px;
+  		
+}
+
+  	#table2{
+  		grid-area: table;
+  		border solid: 1px;
+  		display: block;
+  		border-collapse: collapse;
+  		padding: 10px;
+  		
+}
+
+ .main-head {
+    background: #44DA30; /*black header*/
+    color: black;
+    text-align: center;
+    background: #44DA30; /*black header*/
+    color: black;
+    border: 2px solid black;
+    padding: 5px;
+ }
+
+ .main-nav {
+  background: #1B8016;
+  color: black;
+  border: 2px solid black;
+  padding: 5px;   
+}
+ .main-footer{
+ 	text-align: center;
+    background:  #30CEBD;
+    color: white;
+    border: 2px solid black;
+    padding: 5px;
+
+}
+
+   nav ul {
+    display: flex; /*This defines a flex container - only declared once*/
+    justify-content: space-between;
+  }
+
+/*---------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 576px) { /*The min width of screen has to be px for this style to take effect*/
+  .wrapper {
+    grid-template-columns: 1fr 3fr; /*fr = fraction*/
+    grid-template-areas:
+       "header header"
+    "nav nav"
+    "table table"
+    "footer footer";
+  }
+
+  nav ul {
+  	/*This defines a flex container - only declared once*/
+    justify-content: space-between;
+  }
+
+   .main-head{
+    background: #22E618; /*gray*/
+    color: black;
+  }
+}
+
+
+/*---------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1023px)/*The min width of screen has to be 768 px for this style to take effect*/ {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "header header header"
+    "nav table table"
+    "nav table table" 
+    "nav footer footer";
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+   .main-head{background: #17F60C} 
+}
+
+/*---------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1024px) /*and (max-width: 1023px)*/ {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "header header header"
+    "nav table table"
+    "nav table table"
+    "footer footer footer";
+  }
+
+  nav ul {
+  	flex-direction: column;
+    justify-content: space-between;
+  }
+
+}
+
+/*---------------------------------------------------------------------------*/
+
+
+ #table1{
+  		grid-area: table;
+  		border solid: 1px;
+  		display: block;
+  		border-collapse: collapse;
+  		padding: 10px;
+  		
+}
+
+  	#table2{
+  		grid-area: table;
+  		border solid: 1px;
+  		display: block;
+  		border-collapse: collapse;
+  		padding: 10px;
+  		
+}
+   .main-head {
+     grid-area: header;
+     text-align: center;
+     background: #44DA30; /*black header*/
+     color: black;
+     border: 2px solid black;
+     padding: 5px;
+     
+    }
+
+
+    .main-nav {
+     grid-area: nav;
+     background: #1B8016;
+     color: black;
+     border: 2px solid black;
+     padding: 5px;
+     
+}
+
+
+    .main-footer {
+     grid-area: footer;
+     text-align: center;
+     background:  #30CEBD;
+     color: white;
+     border: 2px solid black;
+     padding: 5px;
+
+}
+
+
+</style>
+
+  </head>
+
+  <body>
+  	<body>
+  <div class="wrapper">
+  	<header class="main-head">
+  	<h1>Showcase</h1>
+  	</header>
+
+  	<nav class="main-nav">
+
+  	<ul>	
+      <Li id='greeting'></Li> 
+      <li><a href="midterm2_benjaminletta.html">Main Page</a></li>
+      <li><a href="about2.html">About</a></li>
+      <li><a href="contact2.html">Contact</a></li>
+    </ul>
+	 </nav>
+
+	<div>
+	  <table id="table1">
+	  	<tr>
+	  		<th>Company Name</th>
+	  		<th>Work Experience</th>
+	  	</tr>
+	  	<tr>
+	  		<th>Cho's Legacy Tae Kwon Do</th>
+	  		<td>
+	  			<p> <b>Location:</b> Morristown, NJ</p>
+	  			<p> <b>Postion:</b> Assistant Instructor (Second Degree Black Belt)</p>
+	  			<p> <b>Time:</b> June 2022 - present</p>
+	  			<ul>
+	  				<li>Teach & assist classes</li>
+	  				<li>Tracking student's attendance<br/>
+	  				(via student cards and processing in the school's online database system</li>
+	  				<li>Assist with testing/promotion of students and promotion day set up</li> <li>Assist in Summer Camp Activities</li>
+	  				<li>Maintain Cleanliness of the facility</li>
+	  				<li>Attend weekly staff meetings & Instructor Training Program Meetings</li>
+	  				<li>Handle comunication and announcements by providing information to<br> current customers via handouts and verbal communication</li>
+	  				<li>Supplying products and equipment ordered by the students</li>
+	  			</ul>
+	  		</td>
+	  		
+	  	</tr>
+	  	<tr>
+	  		<th>Buffalo Wild Wings</th>
+	  		<td>
+	  			<p> <b>Location:</b> Parisppany, NJ</p>
+	  			<p> <b>Postion:</b> Busser/Greeter</p>
+	  			<p> <b>Time:</b> June 2021 - August 2021</p>
+	  			<ul>
+	  				<li>Bussed dinner tables, high tables</li>
+	  				<li>Greeted/seated guests, managed waiting list</li>
+	  				<li>Assisted dishwashers and performed some food running</li>
+	  				<li>Cleaned winddows and menus</li>
+	  			</ul>
+	  		</td>
+	  		
+	  	</tr>
+	  	<tr>
+	  		<th>Mayo Performing Arts Center</th>
+	  		<td>
+	  			<p> <b>Location:</b> Morristown, NJ</p>
+	  			<p> <b>Postion:</b> Intern</p>
+	  			<p> <b>Time:</b> November 2019 – December 2019</p>
+	  			<ul>
+	  				<li>Researched online advertising for future events</li>
+	  				<li>Set up for shows and events</li>
+	  				<li>Stocked concessions</li>
+	  			</ul>
+	  		</td>
+	  		
+	  	</tr>
+	  	<tr>
+	  		<th>Organization</th>
+	  		<th>Volunteer Experience</th>
+	  	</tr>
+	  	<tr>
+	  		<th>Habitat for Humanity</th>
+	  		<td>
+	  			<p> <b>Location:</b> Uniondale, NY</p>
+	  			<p> <b>Postion:</b> Team Member</p>
+	  			<p> <b>Time:</b> September 2021- Present</p>
+	  			<ul>
+	  				<li>Stocking Soup Kitchen</li>
+	  				<li> Home Construction</li>
+	  			</ul>
+	  		</td>
+	  		
+	  	</tr>
+	  	<tr>
+	  		<th>Cho’s Legacy Tae Kwon Do</th>
+	  		<td>
+	  			<p> <b>Location:</b> Morrsitown, NJ</p>
+	  			<p> <b>Postion:</b> Assistant Instructor (Second Degree Black Belt)</p>
+	  			<p> <b>Time:</b> June 2018 – August 2020</p>
+	  			<ul>
+	  				<li>Taught proper form</li>
+	  				<li>Made sure students were safe while practicing</li>
+	  			</ul>
+	  		</td>
+	  		
+	  	</tr>
+	  	<tr>
+	  		<th>Saint Virgil’s Appalachia Outreach</th>
+	  		<td>
+	  			<p> <b>Location:</b> Harlan, Kentucky</p>
+	  			<p> <b>Postion:</b> Team Member</p>
+	  			<p> <b>Time:</b> January 2018 – April 2020</p>
+	  			<ul>
+	  				<li><b>Fund-raising:</b> 
+	  					<ul>
+	  						<li>Car Washes</li>
+	  						<li> Bake Sales</li>
+	  				        <li>Volunteer food service at Applebee’s</li>
+	  				     </ul>
+	  					</li>
+	  				<li><b>Home Construction / Repairs:</b> 
+	  					<ul>
+	  						<li>Sheet Rock</li>
+	  						<li>Floorboard Installation</li>
+	  					</ul>
+	  				</li>
+	  			</ul>
+	  		</td>
+	  		
+	  	</tr>
+	  	
+	  	
+	  </table>
+	</div>
+
+	<footer id="footer" class="main-footer">The footer
+
+    </footer>
+    </div>  
+
+
+	<script type="text/javascript" src="js/midterm_javascript.js"></script>  
+ 
+  </body>
+  	
+</html>
+
