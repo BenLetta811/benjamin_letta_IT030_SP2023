@@ -14,7 +14,11 @@ font size: 12px;
 font color: black;
 }
 
-  	
+  table{
+  	width: 100%;
+  	border-color: #17F60C;
+  }
+
   th{
   	background-color:#cccccc;
   	border: 2px solid #000000;
@@ -34,6 +38,7 @@ font color: black;
    "header"
   "nav"
   "table"
+  "sidebar"
   "footer";
   }
 
@@ -46,14 +51,6 @@ font color: black;
   		
 }
 
-  	#table2{
-  		grid-area: table;
-  		border solid: 1px;
-  		display: block;
-  		border-collapse: collapse;
-  		padding: 10px;
-  		
-}
 
  .main-head {
     background: #44DA30; /*black header*/
@@ -71,6 +68,10 @@ font color: black;
   border: 2px solid black;
   padding: 5px;   
 }
+.sidebar {
+     display: none;
+}
+
  .main-footer{
  	text-align: center;
     background:  #30CEBD;
@@ -91,9 +92,9 @@ font color: black;
   .wrapper {
     grid-template-columns: 1fr 3fr; /*fr = fraction*/
     grid-template-areas:
-       "header header"
-    "nav nav"
+    "header header"
     "table table"
+    "nav nav"
     "footer footer";
   }
 
@@ -114,18 +115,27 @@ font color: black;
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
-      "header header header"
-    "nav table table"
-    "nav table table" 
-    "nav footer footer";
+    "header header header"
+    "nav table sidebar"
+    "nav table sidebar "
+    "footer footer footer";
   }
 
   nav ul {
-    flex-direction: column;
-  }
-}
+  	 flex-direction: column;
+  	}
 
-   .main-head{background: #17F60C} 
+  table{
+  	width: 100%;
+  	border-color: #17F60C;
+  }
+
+
+   .main-head{background: #17F60C
+   } 
+   .siderbar{
+   	display: inherit;
+   }
 }
 
 /*---------------------------------------------------------------------------*/
@@ -134,10 +144,10 @@ font color: black;
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
-      "header header header"
-    "nav table table"
-    "nav table table"
-    "footer footer footer";
+     "header header header"
+    "nav table sidebar"
+    "nav table sidebar"
+    "footer footer sidebar";
   }
 
   nav ul {
@@ -159,14 +169,7 @@ font color: black;
   		
 }
 
-  	#table2{
-  		grid-area: table;
-  		border solid: 1px;
-  		display: block;
-  		border-collapse: collapse;
-  		padding: 10px;
-  		
-}
+
    .main-head {
      grid-area: header;
      text-align: center;
@@ -184,7 +187,12 @@ font color: black;
      color: black;
      border: 2px solid black;
      padding: 5px;
-     
+}
+	.sidebar {
+     grid-area: sidebar;
+     background:  #30CEBD;
+     border: 2px solid black;
+     padding: 5px;
 }
 
 
@@ -221,11 +229,12 @@ font color: black;
 	 </nav>
 
 	<div>
-	  <table id="table1">
+	  <table id="table1" border="6">
 	  	<tr>
 	  		<th>Company Name</th>
 	  		<th>Work Experience</th>
-	  	</tr>
+	  		<th>First Started</th>
+	  		<th>Last Day</th>
 	  	<tr>
 	  		<th>Cho's Legacy Tae Kwon Do</th>
 	  		<td>
@@ -243,7 +252,18 @@ font color: black;
 	  				<li>Supplying products and equipment ordered by the students</li>
 	  			</ul>
 	  		</td>
-	  		
+	  		<td>
+	  			<p>I started right after my spring semster of 2022. My instrcutor contacted
+	  				me if I wanted to help out classes during the summer and to get payed.
+	  				I accepted since its a cool opportunity to assitant other students about 
+	  				Tae Kwon Do. It is reallt fun but also rough at times. I work 6 hrs part time
+	  				from 3pm to 9pm Mon-Fri $15 an hour. </p>
+	  		</td>
+	  		<td> 
+	  			<p>I am currently on pause from work since I'm back in college but will return eventually 
+	  		when the semseter is over.</p>
+	  		</td>		
+	  	
 	  	</tr>
 	  	<tr>
 	  		<th>Buffalo Wild Wings</th>
@@ -257,6 +277,19 @@ font color: black;
 	  				<li>Assisted dishwashers and performed some food running</li>
 	  				<li>Cleaned winddows and menus</li>
 	  			</ul>
+	  		</td>
+	  		<td>
+	  			<p> This job was only done because I wanted to make money while off from college in 
+	  				another few months. Bufallo Wild Wings gave me positon for bussing.
+	  				I had to work from the evenings to to end of midnight whic can be intesne.
+	  				I wasn't hard but when it gets busy, It will become an nightmare.
+	  			</p>
+	  		</td>
+	  		<td>
+	  			<p>My last day was in the middle of August because I have to get back to Hofstra.
+	  			It wasn't my favorite job, but it did sure show me expericence when working for the 
+	  			food industry.
+	  			</p>
 	  		</td>
 	  		
 	  	</tr>
@@ -272,11 +305,24 @@ font color: black;
 	  				<li>Stocked concessions</li>
 	  			</ul>
 	  		</td>
+	  		<td>
+	  			<p>I started right after my spring semster of 2022. My instrcutor contacted
+	  				me if I wanted to help out classes during the summer and to get payed.
+	  				I accepted since its a cool opportunity to assitant other students about 
+	  				Tae Kwon Do. It is reallt fun but also rough at times. I work 6 hrs part time
+	  				from 3pm to 9pm Mon-Fri $15 an hour. </p>
+	  		</td>
+	  		<td> 
+	  			<p>I am currently on pause from work since I'm back in college but will return eventually 
+	  		when the semseter is over.</p>
+	  		</td>
 	  		
 	  	</tr>
 	  	<tr>
 	  		<th>Organization</th>
 	  		<th>Volunteer Experience</th>
+	  		<th>How I join</th>
+	  		<th>LasT Day</th>
 	  	</tr>
 	  	<tr>
 	  		<th>Habitat for Humanity</th>
@@ -332,6 +378,8 @@ font color: black;
 	  	
 	  </table>
 	</div>
+
+	<aside class="sidebar"></aside>
 
 	<footer id="footer" class="main-footer">The footer
 
