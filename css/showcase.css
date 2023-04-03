@@ -166,7 +166,7 @@ font color: black;
      grid-area: header;
      text-align: center;
      border: 3px solid black;
-     padding: 3px;
+     padding: 5px;
      background: #44DA30; /*green*/
      color: black;
      
@@ -175,15 +175,15 @@ font color: black;
 
     .main-nav {
      grid-area: nav;
-     background: #1B8016;
-     color: black;
+     border: 3px solid black;
+     padding: 5px;
      border: 2px solid black;
      padding: 5px;
 }
 	.sidebar {
      grid-area: sidebar;
      background:  #30CEBD;
-     border: 2px solid black;
+     border: 3px solid black;
      padding: 5px;
 }
 
@@ -191,7 +191,7 @@ font color: black;
     .main-footer {
      grid-area: footer;
      text-align: center;
-     border: 2px solid black;
+     border: 3px solid black;
      padding: 5px;
      background: #1B8016;
      color: white;

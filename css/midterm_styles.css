@@ -141,27 +141,27 @@
 }
  .section_content {
      grid-area: section_content;
-     border: 2px solid black;
-     padding: 3px;
+     border: 3px solid black;
+     padding: 5px;
 }
  .content_one {
      grid-area: content_one;
-     border: 2px solid black;
-     padding: 3px;
+     border: 3px solid black;
+     padding: 5px;
 }
  .main-nav {
      grid-area: nav;
-     border: 2px solid black;
+     border: 3px solid black;
      padding: 5px;
 }
  .sidebar {
      grid-area: sidebar;
-     border: 2px solid black;
+     border: 3px solid black;
      padding: 5px;
 }
  .ad {
      grid-area: ad;
-     border: 2px solid black;
+     border: 3px solid black;
      padding: 5px;
 }
  .main-footer {
@@ -169,7 +169,7 @@
      text-align: center;
      background: #1B8016;
      color: white;
-     border: 2px solid black;
+     border: 3px solid black;
      padding: 5px;
 }
  .second_sidebar{
@@ -177,7 +177,7 @@
      text-align: center;
      background: #1B8016;
      color: white;
-     border: 2px solid black;
+     border: 3px solid black;
      padding: 5px;
 }
 

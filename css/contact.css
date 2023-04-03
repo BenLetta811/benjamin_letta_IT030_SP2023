@@ -128,35 +128,35 @@
      grid-area: contact_header;
      text-align: center;
      border: 3px solid black;
-     padding: 3px;
+     padding: 5px;
      background: #44DA30; /*green*/
      color: black;
 }
  .name {
      grid-area: name;
      border: 3px solid black;
-     padding: 3px;
+     padding: 5px;
      background:  #30CEBD;
      color: white;
 }
  .email {
      grid-area: email;
      border: 3px solid black;
-     padding: 3px;
+     padding: 5px;
      background:  #30CEBD;
      color: white;
 }
  .main-nav {
      grid-area: nav;
      border: 3px solid black;
-     padding: 3px;
+     padding: 5px;
      background: #1B8016;
      color: black;
 }
  .phone_number {
      grid-area: phone_number;
      border: 3px solid black;
-     padding: 3px;
+     padding: 5px;
      background:  #30CEBD;
      color: white;
 }
@@ -164,7 +164,7 @@
  .main-footer {
      grid-area: footer;
      text-align: center;
-     border: 1px solid black;
+     border: 3px solid black;
      padding: 5px;
      background: #1B8016;
      color: white;
