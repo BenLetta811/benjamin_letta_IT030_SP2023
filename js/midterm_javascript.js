@@ -1,8 +1,8 @@
 // Get the current time
-const now = new Date();
+var now = new Date();
 
 // Get the current hour
-const hour = now.getHours();
+var hour = now.getHours();
 
 // Set the greeting message based on the current hour
 let greeting = '';
@@ -17,14 +17,14 @@ if (hour < 12) {
 }
 
 // Display the greeting message on the page
-const greetingElement = document.getElementById('greeting');
+var greetingElement = document.getElementById('greeting');
 if (greetingElement) {
   greetingElement.textContent = greeting;
 }
 /*-----------------------------------------------*/
 function checkViewportWidth() {
-  const width = window.innerWidth;
-  const footer = document.querySelector("footer");
+  var width = window.innerWidth;
+  var footer = document.querySelector("footer");
   let message = "";
 
   if (width < 768) {

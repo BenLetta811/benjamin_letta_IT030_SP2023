@@ -13,15 +13,15 @@
   grid-template-areas:
     "header"
     "nav"
-    "section_content"
-    "content_one"
+    "section"
+    "article"
     "sidebar"
     "second_sidebar"
     "ad"
     "footer";
 }
  .main-head {
-    background: #44DA30; /*black header*/
+    background: #44DA30; /*green header*/
     color: black;
  }
 
@@ -31,7 +31,7 @@
  }
 
  .section_content {
-  background:  #30CEBD;
+  background:  #30CEBD; /*light green*/
   color: white;
  }
 
@@ -65,7 +65,7 @@
     grid-template-areas:
       "header  header"
       "nav     nav"
-      "section_content content_one"
+      "section article"
       "sidebar second_sidebar"
       "ad     footer";
   }
@@ -75,11 +75,6 @@
     justify-content: space-between;
   }
 
-
-   .main-head{
-    background: #22E618; /*gray*/
-    color: black;
-  }
   .sidebar {
     display: inherit;
   }
@@ -87,42 +82,35 @@
 
 
 /*---------------------------------------------------------------------------*/
-@media only screen and (min-width: 768px) and (max-width: 1023px)/*The min width of screen has to be 768 px for this style to take effect*/ {
+@media only screen and (min-width: 768px) and (max-width: 1023px)/* Display when on tablet device*/ {
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
       "header header  header"
       "nav    nav nav "
-      "section_content section_content sidebar"
-      "second_sidebar    content_one ad"
+      "section section sidebar"
+      "second_sidebar    article ad"
         "footer footer  footer";
   }
 
   nav ul {
    justify-content: space-between;
   }
-
-   .main-head{background: #17F60C} 
 }
-
 /*---------------------------------------------------------------------------*/
 
-@media only screen and (min-width: 1024px) /*and (max-width: 1023px)*/ {
+@media only screen and (min-width: 1024px)  {
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
       "header header  header"
-      "nav    section_content sidebar"
-      "second_sidebar    content_one ad"
+      "nav    section sidebar"
+      "second_sidebar    article ad"
       "second_sidebar footer  ad";
   }
 
   nav ul {
     flex-direction: column;
-  }
-
-  .main-head{background:  #17D80E; /*light blue*/
-    color: black;
   }
 
 
@@ -140,12 +128,12 @@
      color: black;
 }
  .section_content {
-     grid-area: section_content;
+     grid-area: section;
      border: 3px solid black;
      padding: 5px;
 }
  .content_one {
-     grid-area: content_one;
+     grid-area: article;
      border: 3px solid black;
      padding: 5px;
 }
@@ -180,4 +168,6 @@
      border: 3px solid black;
      padding: 5px;
 }
+
+?
 

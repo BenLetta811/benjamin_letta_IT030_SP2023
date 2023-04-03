@@ -3,10 +3,6 @@
  font size: 12px;
  font color: black;
  }
- hr.new1 {
-  border-top: 1px dashed red;
-}
-
 /*---------------------------------------------------------------------------*/
 
 .wrapper {
@@ -55,6 +51,9 @@
      background: #30CEBD;
      color: white;
   }
+
+  .hr {
+    width:50%;text-align:left;margin-left:0}
 
 
 

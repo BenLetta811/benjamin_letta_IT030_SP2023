@@ -32,7 +32,7 @@ font color: black;
   "footer";
   }
 
-  #table1{
+  #table1{ /*For the table*/
   		grid-area: table;
   		border solid: 1px;
   		display: block;
@@ -43,13 +43,11 @@ font color: black;
 
 
  .main-head {
-    background: #44DA30; /*black header*/
+    background: #44DA30; /*green header*/
     color: black;
     text-align: center;
     border: 3px solid black;
-    padding: 3px;
-    background: #44DA30; /*green*/
-    color: black;}
+    padding: 3px;}
 
  .main-nav {
   background: #1B8016;
@@ -71,15 +69,15 @@ font color: black;
 }
 
    nav ul {
-    display: flex; /*This defines a flex container - only declared once*/
+    display: flex; 
     justify-content: space-between;
   }
 
 /*---------------------------------------------------------------------------*/
 
-@media only screen and (min-width: 576px) { /*The min width of screen has to be px for this style to take effect*/
+@media only screen and (min-width: 576px) { /*For mobilbe devices */
   .wrapper {
-    grid-template-columns: 1fr 3fr; /*fr = fraction*/
+    grid-template-columns: 1fr 3fr; 
     grid-template-areas:
     "header header"
     "nav nav"
@@ -92,14 +90,14 @@ font color: black;
   }
 
    .main-head{
-    background: #22E618; /*gray*/
+    background: #22E618; 
     color: black;
   }
 }
 
 
 /*---------------------------------------------------------------------------*/
-@media only screen and (min-width: 768px) and (max-width: 1023px)/*The min width of screen has to be 768 px for this style to take effect*/ {
+@media only screen and (min-width: 768px) and (max-width: 1023px)/*/* Display when on tablet device*/ {
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
@@ -128,7 +126,7 @@ font color: black;
 
 /*---------------------------------------------------------------------------*/
 
-@media only screen and (min-width: 1024px) /*and (max-width: 1023px)*/ {
+@media only screen and (min-width: 1024px) /*for desktop devices */ {
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
@@ -197,6 +195,3 @@ font color: black;
      color: white;
 
 }
-
-
-</style>
