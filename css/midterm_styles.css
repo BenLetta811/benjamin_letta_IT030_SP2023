@@ -111,7 +111,7 @@
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
-      "nav header  sidebar"
+      "header header  sidebar"
       "nav    section_content sidebar"
       "second_sidebar    content_one ad"
       "second_sidebar footer  ad";
