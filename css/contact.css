@@ -1,0 +1,170 @@
+ body{
+ font-family: Arial, Verdana, sans-serif ;
+ font size: 12px;
+ font color: black;
+ }
+
+/*---------------------------------------------------------------------------*/
+
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "contact_header"
+    "nav"
+    "name"
+    "email"
+    "phone_number"
+    "footer";
+}
+
+.main-head {
+     text-align: center;
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; /*green*/
+     color: black;
+}
+ .name {
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; 
+     color: white;
+}
+ .email {
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; 
+     color: white;
+}
+ .main-nav {
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; /*black header*/
+     color: black;
+}
+ .phone_number {
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; /*black header*/
+     color: white;
+}
+ 
+ .main-footer {
+     text-align: center;
+     border: 1px solid black;
+     padding: 5px;
+     background: #30CEBD;
+     color: white;
+}
+
+
+   nav ul {
+    display: flex; /*This defines a flex container - only declared once*/
+    justify-content: space-between;
+  }
+/*---------------------------------------------------------------------------*/
+@media only screen and (min-width: 576px) { /*The min width of screen has to be px for this style to take effect*/
+  .wrapper {
+    grid-template-columns: 1fr 3fr; /*fr = fraction*/
+    grid-template-areas:
+      "contact_header contact_header"
+      "nav     nav"
+      "name name"
+      "email email"
+      "phone_number  footer";
+  }
+
+
+  nav ul {
+    justify-content: space-between;
+  }
+
+
+   .main-head{
+    background: #22E618;
+    color: black;
+  }
+ 
+  /*---------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1023px)/*The min width of screen has to be 768 px for this style to take effect*/ {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+     "contact_header contact_header contact_header"
+      "nav    name name"
+      "nav   email email"
+      "footer phone_number phone_number";
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+}
+
+/*---------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1024px) /*and (max-width: 1023px)*/ {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+     "contact_header contact_header contact_header"
+      "nav    name  email"
+      "nav    phone_number footer";
+  }
+
+  nav ul {
+    flex-direction: column;
+
+  }
+}
+
+/*---------------------------------------------------------------------------*/
+
+
+ .main-head {
+     grid-area: contact_header;
+     text-align: center;
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; /*green*/
+     color: black;
+}
+ .name {
+     grid-area: name;
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; 
+     color: white;
+}
+ .email {
+     grid-area: email;
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; 
+     color: white;
+}
+ .main-nav {
+     grid-area: nav;
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; /*black header*/
+     color: black;
+}
+ .phone_number {
+     grid-area: phone_number;
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; /*black header*/
+     color: white;
+}
+ 
+ .main-footer {
+     grid-area: footer;
+     text-align: center;
+     border: 1px solid black;
+     padding: 5px;
+     background: #30CEBD;
+     color: white;
+}
