@@ -144,6 +144,10 @@ font color: black;
   	flex-direction: column;
     justify-content: space-between;
   }
+  table{
+    width: 100%;
+    border-color: ##3A740C  ;
+  }
 
 }
 

@@ -3,6 +3,9 @@
  font size: 12px;
  font color: black;
  }
+ hr.new1 {
+  border-top: 1px dashed red;
+}
 
 /*---------------------------------------------------------------------------*/
 
@@ -179,4 +182,5 @@
      background: #30CEBD;
      color: white;
 }
+
 
