@@ -111,7 +111,7 @@
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
-      "header header  sidebar"
+      "header header  header"
       "nav    section_content sidebar"
       "second_sidebar    content_one ad"
       "second_sidebar footer  ad";
@@ -134,8 +134,10 @@
  .main-head {
      grid-area: header;
      text-align: center;
-     border: 2px solid black;
-     padding: 5px;
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; /*green*/
+     color: black;
 }
  .section_content {
      grid-area: section_content;

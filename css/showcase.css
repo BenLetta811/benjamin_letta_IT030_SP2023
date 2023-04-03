@@ -46,11 +46,10 @@ font color: black;
     background: #44DA30; /*black header*/
     color: black;
     text-align: center;
-    background: #44DA30; /*black header*/
-    color: black;
-    border: 2px solid black;
-    padding: 5px;
- }
+    border: 3px solid black;
+    padding: 3px;
+    background: #44DA30; /*green*/
+    color: black;}
 
  .main-nav {
   background: #1B8016;
@@ -166,10 +165,10 @@ font color: black;
    .main-head {
      grid-area: header;
      text-align: center;
-     background: #44DA30; /*black header*/
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; /*green*/
      color: black;
-     border: 2px solid black;
-     padding: 5px;
      
     }
 

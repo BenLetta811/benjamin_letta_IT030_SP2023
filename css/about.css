@@ -80,11 +80,7 @@
   }
 
 
-   .main-head{
-    background: #22E618;
-    color: black;
-  }
- 
+  
   /*---------------------------------------------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 1023px)/*The min width of screen has to be 768 px for this style to take effect*/ {
   .wrapper {
@@ -101,8 +97,7 @@
     justify-content: space-between;
   }
 
-   .main-head{background: #17F60C
-   } 
+   
    .content_about{
     display: inherit;
   }
@@ -125,9 +120,7 @@
     flex-direction: column;
   }
 
-  .main-head{background:  #17D80E; /*light blue*/
-    color: black;
-  }
+
   .content_about{
     display: inherit;
   }
@@ -143,8 +136,10 @@
  .main-head {
      grid-area: header;
      text-align: center;
-     border: 2px solid black;
-     padding: 5px;
+     border: 3px solid black;
+     padding: 3px;
+     background: #44DA30; /*green*/
+     color: black;
 }
  .content_about {
      grid-area: content_about;
