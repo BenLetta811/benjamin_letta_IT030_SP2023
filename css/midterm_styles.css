@@ -65,9 +65,9 @@
     grid-template-areas:
       "header  header"
       "nav     nav"
-      "sidebar section_content"
-      "second_sidebar content_one"
-      "ad      footer";
+      "section_content content_one"
+      "sidebar second_sidebar"
+      "ad     footer";
   }
 
 
