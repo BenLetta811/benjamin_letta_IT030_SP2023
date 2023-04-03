@@ -2,7 +2,6 @@
  font-family: Arial, Verdana, sans-serif ;
  font size: 12px;
  font color: black;
-
  }
 
 /*---------------------------------------------------------------------------*/
@@ -13,61 +12,63 @@
   grid-template-areas:
     "header"
     "nav"
-    "section_content"
     "content_one"
+    "section_content"
     "sidebar"
-    "second_sidebar"
-    "ad"
     "footer";
 }
+
  .main-head {
     background: #44DA30; /*black header*/
     color: black;
+    text-align: center;
+    border: 2px solid black;
+    padding: 5px;
  }
 
- .main-nav {
-  background: #1B8016;
-  color: black;
- }
-
- .section_content {
+ .section_about {
   background:  #30CEBD;
-  color: white;
- }
+     color: white;
+     border: 3px solid black;
+     padding: 5px;
+     overflow: auto;
+  }
 
- .content_one {
-  background:  #30CEBD;
-  color: white;
- }
+  .main-nav{background: #1B8016;
+     border: 1px solid black;
+     padding: 5px;
+   }
 
- .ad {
-  background: #1B8016;
-  color: white;
- }
 
- .sidebar {
-  background: #1B8016;
-  color: white;
-  width: 200px;
+ .content_about{
   display: none;
  }
+ .sidebar{
+    display: none;
+  }
+  .main-footer {text-align: center;
+     border: 1px solid black;
+     padding: 5px;
+     background: #30CEBD;
+     color: white;
+  }
+
+
 
    nav ul {
     display: flex; /*This defines a flex container - only declared once*/
     justify-content: space-between;
   }
-
 /*---------------------------------------------------------------------------*/
-
 @media only screen and (min-width: 576px) { /*The min width of screen has to be px for this style to take effect*/
   .wrapper {
     grid-template-columns: 1fr 3fr; /*fr = fraction*/
     grid-template-areas:
       "header  header"
-      "nav     nav"
-      "sidebar section_content"
-      "second_sidebar content_one"
-      "ad      footer";
+      "nav nav"
+      "section_about section_about"
+      "sidebar sidebar"
+      "footer      footer";
   }
 
 
@@ -77,31 +78,32 @@
 
 
    .main-head{
-    background: #22E618; /*gray*/
+    background: #22E618;
     color: black;
   }
-  .sidebar {
-    display: inherit;
-  }
-}
-
-
-/*---------------------------------------------------------------------------*/
+ 
+  /*---------------------------------------------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 1023px)/*The min width of screen has to be 768 px for this style to take effect*/ {
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
-      "header header  header"
-      "nav    section_content sidebar"
-      "second_sidebar    content_one ad"
-        "footer footer  footer";
+      "header  header header"
+     "nav nav nav"
+     "content_about content_about content_about"
+     "section_about section_about section_about"
+     "footer  footer footer";
   }
 
   nav ul {
-    flex-direction: column;
+    justify-content: space-between;
   }
 
-   .main-head{background: #17F60C} 
+   .main-head{background: #17F60C
+   } 
+   .content_about{
+    display: inherit;
+  }
+  
 }
 
 /*---------------------------------------------------------------------------*/
@@ -110,10 +112,10 @@
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
-      "nav header  sidebar"
-      "nav    section_content sidebar"
-      "second_sidebar    content_one ad"
-      "second_sidebar footer  ad";
+      "header header  header"
+      "content_about content_about nav"
+      "section_about section_about sidebar"
+      "footer footer  footer";
   }
 
   nav ul {
@@ -123,8 +125,13 @@
   .main-head{background:  #17D80E; /*light blue*/
     color: black;
   }
+  .content_about{
+    display: inherit;
+  }
 
-
+  .sidebar{
+    display: inherit;
+  }
 }
 
 /*---------------------------------------------------------------------------*/
@@ -136,45 +143,40 @@
      border: 2px solid black;
      padding: 5px;
 }
- .section_content {
-     grid-area: section_content;
-     border: 2px solid black;
-     padding: 3px;
+ .content_about {
+     grid-area: content_about;
+     background:  #30CEBD;
+     color: white;
+     border: 3px solid black;
+     padding: 5px;
 }
- .content_one {
-     grid-area: content_one;
-     border: 2px solid black;
-     padding: 3px;
+ .section_about {
+     grid-area: section_about;
+     background:  #30CEBD;
+     color: white;
+     border: 3px solid black;
+     padding: 5px;
+     overflow: auto;
 }
  .main-nav {
      grid-area: nav;
-     border: 2px solid black;
+     background: #1B8016;
+     border: 1px solid black;
      padding: 5px;
-}
+   }
+
  .sidebar {
      grid-area: sidebar;
      border: 2px solid black;
      padding: 5px;
 }
- .ad {
-     grid-area: ad;
-     border: 2px solid black;
-     padding: 5px;
-}
+
  .main-footer {
      grid-area: footer;
      text-align: center;
-     background: #1B8016;
-     color: white;
-     border: 2px solid black;
+     border: 1px solid black;
      padding: 5px;
-}
- .second_sidebar{
-     grid-area: second_sidebar;
-     text-align: center;
-     background: #1B8016;
+     background: #30CEBD;
      color: white;
-     border: 2px solid black;
-     padding: 5px;
 }
 
