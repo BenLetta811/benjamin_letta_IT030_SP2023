@@ -29,13 +29,13 @@
  .name {
      border: 3px solid black;
      padding: 3px;
-     background: #44DA30; 
+     background:  #30CEBD;
      color: white;
 }
  .email {
      border: 3px solid black;
      padding: 3px;
-     background: #44DA30; 
+     background:  #30CEBD;
      color: white;
 }
  .main-nav {
@@ -47,7 +47,7 @@
  .phone_number {
      border: 3px solid black;
      padding: 3px;
-     background: #44DA30; /*black header*/
+     background:  #30CEBD;
      color: white;
 }
  
@@ -55,7 +55,7 @@
      text-align: center;
      border: 1px solid black;
      padding: 5px;
-     background: #30CEBD;
+     background: #1B8016;
      color: white;
 }
 
@@ -93,13 +93,13 @@
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
      "contact_header contact_header contact_header"
-      "nav    name name"
-      "nav   email email"
-      "footer phone_number phone_number";
+      "nav    nav nav"
+      "name email phone_number"
+      "footer footer footer";
   }
 
   nav ul {
-    flex-direction: column;
+     justify-content: space-between;
   }
 
 }
@@ -136,14 +136,14 @@
      grid-area: name;
      border: 3px solid black;
      padding: 3px;
-     background: #44DA30; 
+     background:  #30CEBD;
      color: white;
 }
  .email {
      grid-area: email;
      border: 3px solid black;
      padding: 3px;
-     background: #44DA30; 
+     background:  #30CEBD;
      color: white;
 }
  .main-nav {
@@ -157,7 +157,7 @@
      grid-area: phone_number;
      border: 3px solid black;
      padding: 3px;
-     background: #44DA30; /*black header*/
+     background:  #30CEBD;
      color: white;
 }
  
@@ -166,6 +166,6 @@
      text-align: center;
      border: 1px solid black;
      padding: 5px;
-     background: #30CEBD;
+     background: #1B8016;
      color: white;
 }
