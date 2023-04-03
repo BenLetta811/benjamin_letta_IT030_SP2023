@@ -92,13 +92,14 @@
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
       "header header  header"
-      "nav    section_content sidebar"
+      "nav    nav nav "
+      "section_content section_content sidebar"
       "second_sidebar    content_one ad"
         "footer footer  footer";
   }
 
   nav ul {
-    flex-direction: column;
+   justify-content: space-between;
   }
 
    .main-head{background: #17F60C} 

@@ -83,13 +83,12 @@ font color: black;
     grid-template-columns: 1fr 3fr; /*fr = fraction*/
     grid-template-areas:
     "header header"
-    "table table"
     "nav nav"
+    "table table"
     "footer footer";
   }
 
   nav ul {
-  	/*This defines a flex container - only declared once*/
     justify-content: space-between;
   }
 
@@ -106,14 +105,14 @@ font color: black;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
     "header header header"
-    "nav table sidebar"
-    "nav table sidebar "
+    "nav nav nav"
+    "table table sidebar "
     "footer footer footer";
   }
 
   nav ul {
-  	 flex-direction: column;
-  	}
+    justify-content: space-between;
+  }
 
   table{
   	width: 100%;

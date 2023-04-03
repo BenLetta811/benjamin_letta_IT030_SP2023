@@ -116,8 +116,8 @@
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
       "header header  header"
-      "content_about content_about nav"
-      "section_about section_about sidebar"
+      "nav content_about content_about"
+      "sidebar section_about section_about"
       "footer footer  footer";
   }
 
