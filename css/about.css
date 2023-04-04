@@ -164,6 +164,8 @@
 
  .sidebar {
      grid-area: sidebar;
+     background: #44DA30; /*black header*/
+     color: black;
      border: 2px solid black;
      padding: 5px;
 }
